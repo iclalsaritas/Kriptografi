@@ -5,7 +5,7 @@
 ##### - Tarihî Şifreler 
 ##### - Frekans Analizi
 ##### - Enigma
-##### - Blok Şifreler
+##### - Colossus
 
 #### 2) Blok Şifreler 
 ##### - Şifre Tasarımı
@@ -81,3 +81,8 @@ ________________________________________________________________________________
 ##### Bunca zaman elle yazmak dedik, kağıt-kalem yöntemi dedik durduk. Artık makinelerden konuşmanın zamanı geldi. Teknolojik gelişmelerle kağıt-kalemlere veda ettiğimiz zamana giriş yaptık. En popüler örnek olarak Enigma örneğini verebiliriz. 
 ![6](https://github.com/iclalsaritas/Kriptografi/assets/97543719/17814bd7-62d4-4de4-8cce-fd39378889cb)
 ##### Bu gördüğümüz Enigma, elektrik-mekanik çarklı şifreleme makinesidir. 20. yüzyılda askeri,bankacılık gibi alanlarda kullanılmıştır. Çoklu harf değişim şifresi olarak çalışmaktadır. Çarkların durumu ne olursa olsun bir harfin hiçbir zaman kendisine şifrelenmiyor olma özelliği yüzünden -ki bu özellik kasıtlı eklenmiştir- Enigma kolayca kırılmıştır. İngilizler Enigma'yı kırınca 2. Dünya Savaşı seyri de değişmiştir. Almanların ifşalanması mevzusunu biraz daha açmak istiyorum aslında. Hangi karakter hangi karaktere denk gelir konusunu konuşup duruyoruz. Enigma'yı değersiz yapan, ifşalayan ne oldu ? Almanlar her iletişim öncesi "Heil Hitler!" yazdığı için kullanılan anahtarın tespit edilmesi Almanları ifşalayan şey oldu.
+
+##### - Colossus 
+##### Dünyanın ilk programlanabilir elektronik dijital bilgisayarıdır. İngiliz uzmanlar tarafından Lorenz şifresinin kriptanalizi için geliştirilmiştir. Alan Turing tasarımlarıyla katkıda bulunmuştur. 2. Dünya Savaşı bitiminde İngilizler, başka ülkeler bu teknolojiyi öğrenmesin diye bilgisayarı parçalamışlardır.
+![7](https://github.com/iclalsaritas/Kriptografi/assets/97543719/b79b7989-65f8-4d53-baf3-95ad1f2efcf8)
+
