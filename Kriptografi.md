@@ -85,4 +85,8 @@ ________________________________________________________________________________
 ##### - Colossus 
 ##### Dünyanın ilk programlanabilir elektronik dijital bilgisayarıdır. İngiliz uzmanlar tarafından Lorenz şifresinin kriptanalizi için geliştirilmiştir. Alan Turing tasarımlarıyla katkıda bulunmuştur. 2. Dünya Savaşı bitiminde İngilizler, başka ülkeler bu teknolojiyi öğrenmesin diye bilgisayarı parçalamışlardır.
 ![7](https://github.com/iclalsaritas/Kriptografi/assets/97543719/b79b7989-65f8-4d53-baf3-95ad1f2efcf8)
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+#### 2) Blok Şifreler
+
 
