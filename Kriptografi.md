@@ -1,4 +1,4 @@
-###### Merhaba! Kriptografi için nereden başlayacağını bilemiyor ve Türkçe kaynak arıyor olabilirsin. Emin ol doğru yerdesin. Tarihsel süreçten, akan şifrelere doğru gidilecek bu yolda yeterli çalışma motivasyonuna sahipsen ve içeriğimi okumaya hazırsan daha fazla bekleme, hemen başla :) İlerlememiz şu başlıklar altında olacaktır :
+###### Merhaba! Kriptografi için nereden başlayacağını bilemiyor ve kaynak arıyor olabilirsin. Emin ol doğru yerdesin. Tarihsel süreçten, akan şifrelere doğru gidilecek bu yolda yeterli çalışma motivasyonuna sahipsen ve içeriğimi okumaya hazırsan daha fazla bekleme, hemen başla :) İlerlememiz şu başlıklar altında olacaktır :
 
 #### 1) Kriptografi Tarihsel Serüveni
 ##### - Temel Kavramlar Hakkında Bilgi Kazandırmak
