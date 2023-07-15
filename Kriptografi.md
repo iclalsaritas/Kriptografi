@@ -48,7 +48,7 @@ ________________________________________________________________________________
 ##### Korumak istediğimiz şey düz bir metin olsun. İşte bizim şifre dediğimiz şifreli metin dediğimiz şey, düz metnin şifrelenmiş hali oluyor.
 ##### Düz metni şifreli metne, şifreli metni düz metne dönüştüren algoritma çiftine kriptosistem/şifre adını veriyoruz.
 ##### Şifreleme işlemi sırasında kullanılan gizli bilgiye de anahtar diyoruz. (İlerleyen bölümde anlatacağım.)
-##### Harika bir çizimle işi özetleyip Frekans Analizi konumuza geçiş yapalım.
+##### Harika bir çizimle işi özetleyip Frekans Analizi konumuza geçiş yapıyorum.
 ![1](https://github.com/iclalsaritas/Kriptografi/assets/97543719/6f6c9da0-ee21-48b8-afa6-4d8adff2c068)
 
 ##### - Frekans Analizleri
