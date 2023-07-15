@@ -76,3 +76,6 @@ ________________________________________________________________________________
 ![5](https://github.com/iclalsaritas/Kriptografi/assets/97543719/be7a379f-bb8d-4bb2-9022-058cac0794da)
 ##### Frekans Analizi için bazı önlemleri konuşalım.
 ##### Birden fazla harf değişimi kullanımı, Mantıken baktığımızda Playfair gibi bir yöntemin de iki harfli frekans analizine dayanıklı olmadığını görüyoruz ki günümüzde bilgisayarlar ile kısa uzunluktaki harf değişimlerini kırmak hiç de zor değil. Uzun harf dönüşümlerinde anahtarı kaydetmek, pratikte kullanmak ve şifreleme-deşifreleme yapmak çok çok zordur. Doğruya doğru dediğimiz bir konu varsa o da şu ki, aslında çoklu harf dönüşümleriyle uğraşıp durmak bunları türetmek günün sonunda Block şifre fikrinin oluşmasına yol açmıştır. 
+
+##### - Enigma 
+
