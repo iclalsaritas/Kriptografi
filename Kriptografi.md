@@ -67,5 +67,12 @@ ________________________________________________________________________________
 ![4](https://github.com/iclalsaritas/Kriptografi/assets/97543719/1e61b8a5-c9ed-4be7-ad58-dbdcaf3fec3c)
 
 ##### Önce anahtar yazılır. Aynı harfler bir kez kullanılır. 5x5 tablonun geri kalanı kalan harflerle doldurulur. I ve J harfi 25 harfe inmek için aynı kutuya konur. Sık kullanılan harf olmadığından biraz kurban harf oldu diyebiliriz. 
-
-
+##### Şimdi gelelim sistemi kullanabilmek için bilmemiz gerekiyor dediğim 4 kuralı anlatmaya.
+##### 1- Eğer iki harf de aynıysa ya da en son tek bir harf kaldıysa, ilk harften sonra bir X harfi eklenir.
+##### 2- Eğer iki harf aynı satırdaysa, her harf sağındaki harfle değiştirilir. Peki ya satır sonundaysa? Bir harf satır sonundaysa satır başındakiyle değiştirilir.
+##### 3- Eğer iki harf aynı sütundaysa, her half altındaki harfle değiştirilir. Peki ya  sütun sonundaysa? Bir harf sütun sonundaysa sütun başıdakiyle değiştirilir.
+##### 4- Eğer harfler aynı sütun veya satırda değilse, harfler bir dikdörtgenin 2 köşesi olarak düşünülür ve harfler karşılarındaki köşede yer alan harf ile değiştirilir. 
+##### Biraz karmaşık mı geldi ? Hemen harika çizimlerime devam ediyorum :
+![5](https://github.com/iclalsaritas/Kriptografi/assets/97543719/be7a379f-bb8d-4bb2-9022-058cac0794da)
+##### Frekans Analizi için bazı önlemleri konuşalım.
+##### Birden fazla harf değişimi kullanımı, Mantıken baktığımızda Playfair gibi bir yöntemin de iki harfli frekans analizine dayanıklı olmadığını görüyoruz ki günümüzde bilgisayarlar ile kısa uzunluktaki harf değişimlerini kırmak hiç de zor değil. Uzun harf dönüşümlerinde anahtarı kaydetmek, pratikte kullanmak ve şifreleme-deşifreleme yapmak çok çok zordur. Doğruya doğru dediğimiz bir konu varsa o da şu ki, aslında çoklu harf dönüşümleriyle uğraşıp durmak bunları türetmek günün sonunda Block şifre fikrinin oluşmasına yol açmıştır. 
