@@ -58,5 +58,9 @@ ________________________________________________________________________________
 ##### Şimdi şöyle bir gerçek vardır ki Sezar şifresi, alfabe 26 harf olduğuna göre sadece 25 farklı kaydırma yöntemi olduğu için kolayca kırılabilir. Modern bilgisayarlar ve şifre kırma yöntemleri, brute force saldırıları, frekans analizi ve dilbilgisi özelliklerini kullanarak Sezar şifresini hızlı bir şekilde kırabilirler. Sonuç olarak, Sezar şifresi kullanıldığında güvenlik düzeyi çok düşüktür. Biz buna anahtar uzayı çok küçük diyoruz. Yani anahtarı tahmin etmek çok kolay.
 ##### Basit Monoalphabetic Değişim : Her harf bir harf ile yer değiştirir. A harfi artık K, B harfi artık U harfi gibiymiş gibi davranılır. Örnek :
 ![3](https://github.com/iclalsaritas/Kriptografi/assets/97543719/1cb906b3-3cf9-4598-8aaa-405905c526a6)
+##### Peki İclalciğim madem bu kadar çok olasılığın mümkün olduğu bir şifreleme yönteminden bahsediyorsun. Öyleyse neden brute force ataklarından korunmak için Monoalphabetic değişim kullanmayalım? Çünkü arkadaşım Dildeki tekrar ve frekans analizi yöntemiyle bu 26! olasılıklı şifre kolayca kırılabiliyor. Frekans Analizi nedir hemen sırası gelmişken anlatayım.
+
+##### - Frekans Analizi 
+##### 9.yy.'da  Al-Kindi tarafından önerilmiştir. Dildeki tekrara dayanmaktadır. Bu alan hakkında kitabı da mevcuttur hatta bir kopyası Topkapı Müzesinde bulunuyor. Belli bir ücret karşılığı sayfaların fotoğrafını çekebiliyoruz diye hatırlıyorum. Dildeki tekrar derken ne demek istiyoruz? Mesela Al-Kindi diyor ki, herhangi bir dil için o dilde yazılmış olan uzun bir yazı bul ve o yazıda en çok hangi harf geçiyor notunu al. Bu dil Türkçe ise uzun bir metinde en çok A harfinin tekrarladığını görürsün. Bu şekilde en çok tekrarlanan ikinci, üçüncü, dördüncü... harf diye gittiğinizde, bu harfleri listede yerine koyduğunuz harflerle eşleştirip şifreyi kırabilirsiniz. Frekans Analizinde işin özü bu şekildedir.
 
 
