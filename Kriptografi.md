@@ -30,3 +30,13 @@
 ##### - RSA Şifreleme Algoritması
 ##### - El-Gamal Şifreleme Algoritması ve Dijital İmza 
 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+#### 1) Kriptografi Tarihsel Serüveni
+##### - Temel Kavramlar Hakkında Bilgi Kazandırmak 
+##### Kriptoloji : Güvenli olmadığını varsaydığımız bir iletişim kanalında güvenli iletişim ile ilgilenir. Bunu günlük hayatta kullandığınız iletişim yöntemleri olarak düşünebilirsiniz. Mektuplaşıyorsanız bir mektubu, hatta havada uçan güvercinden gelen postayı, telefon görüşmesi yapıyorsanız da bir telefonu düşünebilirsiniz. Burada asıl önemli olan, kullanılan iletişim aracının ne olduğu değildir. Güvende miyim? Birisi beni dinliyor mu? endişenizin şiddetinin ne olduğudur. Yani kriptoloji, yollayacağımız mesajı şifreli şekilde yollayıp deşifre edilmemizi engelleyen bir bilim dalıdır.
+##### Kriptolojiyi 2 alt tanımda inceleriz. Kriptografi ve Kriptanaliz.
+##### Kriptografi : Güvenli kriptosistem/şifre tasarımıyla ilgilenir.
+##### Kriptanaliz : Kriptosistem/şifre analiziyle yani kırma işlemleriyle ilgilenir.
+##### İki terimi birbirinden ayrı düşünmek tam anlamıyla hata olacaktır. Çünkü sağlam bir tasarım için onu nasıl kırabileceğini de bilmek gerekir. 
+##### Peki ben hala Kriptografi ve Kriptoloji terimlerini karıştırıyorum İclalciğim diyorsan, endişelenme. Günümüzde iki kavram da aynı anlamda kullanılıyor. 
+
