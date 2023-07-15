@@ -3,7 +3,7 @@
 #### 1) Kriptografi Tarihsel Serüveni
 ##### - Temel Kavramlar Hakkında Bilgi Kazandırmak
 ##### - Frekans Analizleri
-##### - Tarihi Şifreler
+##### - Tarihî Şifreler
 ##### - Enigma
 ##### - Blok Şifreler
 
