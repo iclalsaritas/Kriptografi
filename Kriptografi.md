@@ -183,4 +183,5 @@ ________________________________________________________________________________
 ##### Klasik Şifrelerde Dolgu
 ##### Dolgu yöntemi klasik şifrelerde mesajın başında ve sonunda uygulanmaktadır. Resmi mesajların başını ya da sonunu tahmin etmek zor değildir. Dolayısıyla şifreli metni ele geçirenler aynı zamanda düz metnin de bir kısmını bilir hale gelmektedir. Bunu engellemek için düz metnin başına ve sonuna rastgele kelimeler eklenir. Bu fazladan kelimeler deşifre işleminden sonra ayıklanır.
 
-
+##### Şimdi sıra geldi ikinci problem için konuşmaya. Önce iki kavramdan bahsedeyim. Başlangıç Vektörleri ve Nonce. Başlangıç Vektörleri; blok şifre, özet fonksiyon ya da mesaj doğrulama kodu gibi kriptografik algoritmaların ilk çalıştırıldığı anda girdi olarak kullanılan değerlerdir. Başlangıç vektörleri gizli değildir ve standart dokümanlarından ulaşılabilir.
+##### Rastgele üretilmiş ve tek bir sefer kullanılacak değerlere nonce adı verilmektedir. Kriptografik algoritmaların güvenliği için Nonce ve Vektörel Algoritmaların rastgele üretilmiş olmaları gerekmektedir.
