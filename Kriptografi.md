@@ -157,6 +157,7 @@ ________________________________________________________________________________
 ##### Döngü sayısı : 16
 ![3](https://github.com/iclalsaritas/Kriptografi/assets/97543719/4427dd74-1183-4e5e-a3cb-e0398d4971cb)
 
+##### - AES ve Brute Force Saldırısı
 
 
 
