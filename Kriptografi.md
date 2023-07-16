@@ -8,7 +8,8 @@
 ##### - Colossus
 
 #### 2) Blok Şifreler 
-##### - Şifre Tasarımı
+##### - Blok Şifre
+##### - Blok Şifre Tasarımı
 ##### - Feistel Şifreler ve DES
 ##### - AES ve Brute Force Saldırısı
 ##### - Blok Şifre Çalışma Prensibi
@@ -106,6 +107,17 @@ ________________________________________________________________________________
 
 ##### Simetrik kriptosistemler : Blok şifreler ve akan şifreler şifreleme işlemi için kullanılmaktadır. MAC verinin ya da mesajı yollayan kaynağını doğrulamak için kullanılmaktadır.
 ##### Asimetrik kriptosistemler : Asimetrik kriptografi anahtar paylaşımı , açık anahtar şifreleme ve dijital imza gibi değişik türden algoritmalardan oluşmaktadır.
+
+##### - Blok Şifre
+##### Blok şifreler b bit uzunluğundaki veri üzerinde çalışır.
+##### Düz metim b bit uzunluğundaki bloklara bölünür.
+##### Her blok k bit uzunluğundaki anahtar yardımıyla şifrelenerek b bit uzunluğunda çıktı oluşturur.
+##### Çıktı bloklarından şifreli metin elde edilir.
+##### Bir blok şifre ve seçilen anahtar , 2^b elemanlı bir kümenin elemanlarını aynı 2^b elemanlı kümeye gönderen bir permütasyon olarak düşünülebilir.
+##### Günümüzde b= 64 ya da 128 bit ve |k| = 128 ,192 ya da 256 bit olarak seçilir. Ne kadar yüksek bit seçersen o kadar sağlam bir güvenliğe sahip olursun. Bu yüzden bitini uzun tutmanda fayda var.
+
+##### - Blok Şifre Tasarım
+
 
 
 
