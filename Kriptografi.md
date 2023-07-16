@@ -136,10 +136,10 @@ ________________________________________________________________________________
 ![2](https://github.com/iclalsaritas/Kriptografi/assets/97543719/410763b1-287b-4a49-8582-1f4abd301632)
 ##### Bakın burada şifreli metni ele geçiren kişi, sağ parçayı gizli anahtarı bildiğinden dolayı döngü fonksiyonuna katarak yukarıya doğru çıkar ve düz metne ulaşmış olur. 
 ##### SPN ve Feistel artılarını inceleyecek olursak : 
-##### Artılar
+##### / Artılar /
 ##### Feistel : Şifreleme ve deşifreleme algoritmaları tamamen aynıdır. Sadece döngü anahtarlarının sırası değiştirilir.
 ##### SPN : Tek döngü girdinin tamamını etkilemektedir. 
-##### Eksiler
+##### / Eksiler /
 ##### Feistel : Tek döngü girdinin sadece yarısını etkilemektedir.
 ##### SPN : Deşifreleme işlemi değişim ve permütasyon tabakalarının tersini de gerektirmektedir. 
 
