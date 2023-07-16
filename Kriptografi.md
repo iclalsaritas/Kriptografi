@@ -185,3 +185,11 @@ ________________________________________________________________________________
 
 ##### Şimdi sıra geldi ikinci problem için konuşmaya. Önce iki kavramdan bahsedeyim. Başlangıç Vektörleri ve Nonce. Başlangıç Vektörleri; blok şifre, özet fonksiyon ya da mesaj doğrulama kodu gibi kriptografik algoritmaların ilk çalıştırıldığı anda girdi olarak kullanılan değerlerdir. Başlangıç vektörleri gizli değildir ve standart dokümanlarından ulaşılabilir.
 ##### Rastgele üretilmiş ve tek bir sefer kullanılacak değerlere nonce adı verilmektedir. Kriptografik algoritmaların güvenliği için Nonce ve Vektörel Algoritmaların rastgele üretilmiş olmaları gerekmektedir.
+##### NIST'in Blok Şifre Çalışma Yöntemleri
+##### 1) Electronic Codebook(ECB)
+##### 2) Cipher Block Chaining(CBC)
+##### 3) Cipher Feedback(CFB)
+##### 4) Output Feedback(OFB)
+##### 5) Counter(CTR)
+##### 6) XTS(2010 yılında 800-38E dokümanında eklenmiştir.)
+##### Çalışma yöntemi seçimi : Çalışma yöntemi seçilirken şifreleme işleminin yapılacağı koşullar, güvenlik ve performans dikkate alınmalıdır.
