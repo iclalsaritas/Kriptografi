@@ -131,6 +131,9 @@ ________________________________________________________________________________
 ##### Değişim Permütasyon Ağı : Bir döngü 3 katmandan oluşur. Anahtar ekleme, değişim ve permütasyon. Anahtar ekleme kısmında anahtar düz metin ile işleme sokulur. Değişim kısmında karmaşıklık sağlanır. Permütasyon kısmında dağılım sağlanır. Bu yapıya örnek şifreler AES ve PRESENT verebiliriz. AES şu an dünyada en çok kullanılan şifreleme algoritmasıdır. PRESENT  hafif uygulamalar hafif şifreler için önerilir. Söylediklerimin özetini şekil üzerinden gösterirsem : 
 ![1](https://github.com/iclalsaritas/Kriptografi/assets/97543719/3a8b712d-944c-4273-a2ad-b538a8a48a0c)
 ##### Bakın aslında işlemler gayet göz önünde. Ne yaptığım gayet ortada. Öyleyse güvende miyim? Bence güvendesin. Çünkü kötü bir senaryoda şifreli metin bloğuna ulaşılmış olsa bile, işlemi geri sardığında ne düz metin bloğuna ulaşabiliyorsun ne de anahtarı görebiliyorsun. Karşına anahtar ekleme gibi engeller çıkmaya başlıyor. Bir ihtimal şfreli metinden düz metni tahmin etseler yine de anahtarı bulmak için yeterli olmayacaktır. Kısacası tam anlamıyla olmasa da güvendesin.
+
+##### - Feistel Şifreler ve DES
+
 ##### Feistel Ağı : Horst Feistel tarafından önerilmiştir. Bir döngü iki aşamadan oluşur. döngü fonksiyonu ve yer değiştirme işlemi.
 ##### B bitlik girdi iki parçaya bölünür. Döngü fonksiyonu önce bir parçaya uygulanır ve elde edilen çıktı diğer parça ile işleme sokulur. Daha sonra iki parça yer değiştirir. Bu sayede bir sonraki döngüde bu sefer işleme koyulmamış parça döngü fonksiyonundan etkilenir. Görselle daha iyi anlaşılabilir :
 ![2](https://github.com/iclalsaritas/Kriptografi/assets/97543719/410763b1-287b-4a49-8582-1f4abd301632)
