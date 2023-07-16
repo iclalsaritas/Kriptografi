@@ -116,7 +116,8 @@ ________________________________________________________________________________
 ##### Bir blok şifre ve seçilen anahtar , 2^b elemanlı bir kümenin elemanlarını aynı 2^b elemanlı kümeye gönderen bir permütasyon olarak düşünülebilir.
 ##### Günümüzde b= 64 ya da 128 bit ve |k| = 128 ,192 ya da 256 bit olarak seçilir. Ne kadar yüksek bit seçersen o kadar sağlam bir güvenliğe sahip olursun. Bu yüzden bitini uzun tutmanda fayda var.
 
-##### - Blok Şifre Tasarım
+##### - Blok Şifre Tasarımı
+
 
 
 
