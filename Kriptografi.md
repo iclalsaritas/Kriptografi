@@ -151,11 +151,11 @@ ________________________________________________________________________________
 ##### SPN : Deşifreleme işlemi değişim ve permütasyon tabakalarının tersini de gerektirmektedir. 
 
 ##### - DES (Data Encryption Standard) 
-##### IBM tarafından 1970 zamanlarında tasarlanmıştır. Önceki tasarımlar Feistel tarafından yapılmıştır. 1976 yılında NSA değişim kutularını (S-box) değiştirerek şifreyi değiştirmiştir. Bu esasında olumlu bir harekettir ancak anahtar uzunluğunun kısalmasına sebep olduğu için güvenliğini azaltmıştır. 1990 zamanlarından sonra anahtar uzunluğunun kısa olması sebebiyle kullanılamaz haşe gelmiştir.
+##### IBM tarafından 1970 zamanlarında tasarlanmıştır. Önceki tasarımlar Feistel tarafından yapılmıştır. 1976 yılında NSA değişim kutularını (S-box) değiştirerek şifreyi değiştirmiştir. Bu esasında olumlu bir harekettir ancak anahtar uzunluğunun kısalmasına sebep olduğu için güvenliğini azaltmıştır. 1990 zamanlarından sonra anahtar uzunluğunun kısa olması sebebiyle kullanılamaz hale gelmiştir.
 ##### Blok uzunluğu : 64 bit
 ##### Anahtar uzunluğu : 56 bit
 ##### Döngü sayısı : 16
-
+![3](https://github.com/iclalsaritas/Kriptografi/assets/97543719/4427dd74-1183-4e5e-a3cb-e0398d4971cb)
 
 
 
