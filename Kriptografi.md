@@ -164,6 +164,15 @@ ________________________________________________________________________________
 ##### Döngü sayısı : 10, 12, 14 (Anahtar uzunluğuna bağlıdır.)
 ##### Bilinen ataklar etkisizdir.
 
+##### / Bazı Problemler /
+##### Anahtar Yönetimi | Anahtarlar haberleşecekler arasında önceden güvenli şekilde ulaştırılması gerekmektedir. n kişiyle haberleşmek için n anahtarın üretilip ulaştırılması gerekir.
+##### Çözüm | Açık anahtar şifreleme algoritmaları ama daha yavaşlar (performans, yüksek data transferi sorunları). Açık anahtar kriptografisinin anahtar değişimi algoritmaları kullanılabilir (tavsiye edilen çözüm).
 
+##### Anahtar Depolama | Anahtarı HDD'de ya da RAM'de direkt depolamak sorun olabilir. Virüs, Trojan vb. sisteme girerse ayvayı yeriz.
+##### Mesaj Uzunluğu Saklama | Düz metin ve şifreli metin uzunluğu aynıdır. Dolayısıyla iletişimin ana konusunu bilen ve iletişimi dinleyen birisi şifreli metin uzunluklarına bakarak düz metnin ne olduğunu tahmin edebilir.
+##### Anahtar Üretimi | k bitlik güvenlik için kullanılacak k bitlik anahtarın rastgele üretilmiş olması lazım.
+##### Çözüm | Kriptografik açıdan güvenli rastgele sayı üreteçleri ve parola tabanlı anahtar üretim algoritmaları.
+
+##### - Blok Şifre Çalışma Prensibi
 
 
