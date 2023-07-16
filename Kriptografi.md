@@ -85,12 +85,28 @@ ________________________________________________________________________________
 ##### - Colossus 
 ##### Dünyanın ilk programlanabilir elektronik dijital bilgisayarıdır. İngiliz uzmanlar tarafından Lorenz şifresinin kriptanalizi için geliştirilmiştir. Alan Turing tasarımlarıyla katkıda bulunmuştur. 2. Dünya Savaşı bitiminde İngilizler, başka ülkeler bu teknolojiyi öğrenmesin diye bilgisayarı parçalamışlardır.
 ![7](https://github.com/iclalsaritas/Kriptografi/assets/97543719/b79b7989-65f8-4d53-baf3-95ad1f2efcf8)
-______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 #### 2) Blok Şifreler
 ##### Bu bölümde şifre tasarımlarına geçmeden önce ufak bir muhabbet gerçekleştirelim. Encoding, algoritmalar ve kriptosistemlerden konuşalım biraz.
 ##### Biz biliyorduk ki eski şifreler genellikle harf değişimleri kullanılarak kağıt-kalem işleriyle yapılıyordu. Günümüze doğru yaklaştığımızda durum değişti çünkü teknolojinin gelişmesiyle dijitalleşme başladı. E haliyle veriler bitlerden yani 0 ve 1 lerden oluşur vaziyete geldi. 
 ##### Encoding kısacası insanların ya da makinelerin aynı dili konuşması için seçtiği bir karakter tablosu şeklinde düşünebiliriz. En bilindik encoding tablosu ASCII tablosudur. Bu tabloda bazı Türkçe karakterler bulunmadığından utf-8 gibi encodingler kullanmamız gerekiyor.
 ![1](https://github.com/iclalsaritas/Kriptografi/assets/97543719/e3ecb4ae-c872-474e-b565-84bca6048f3e)
+
+##### Kriptografik algoritmalar anahtarlı ve anahtarsız olmak üzere ikiye ayrılır. Anahtarsız algoritmalar özet (Hash) fonksiyonlarıdır. Anahtarlı algoritmalar ise simetrik ve asimetrik olmak üzere ikiye ayrılır.
+##### Simetrik Anahtar/Gizli Anahtar : Bir tane gizli anahtarım var. Bu anahtarımı hem şifreleme hem de deşifreleme için kullanıyorum.
+##### Asimetrik Anahtar/Açık Anahtar : Şifreleme ve deşifreleme anahtarlarım farklı. İlerleyen kısımda detayları konuşulacak.
+
+##### Gizli Anahtar Algoritmaları
+##### Bu algoritmada şifreleme ve deşifreleme için aynı anahtarımı kullanıyorum demiştim. Bu yüzden simetrik anahtar ismiyle de kullanırız. Bu kategori üç ana başlıktan oluşur :
+##### Blok Şifreler
+##### Akan Şifreler
+##### Mesaj Doğrulama Kodları (MAC)
+##### NOT ! MAC in Blok ve Akan şifrelerden farkı, kodların şifreleme amaçlı değil de mesajın doğruluğunun kontrol edilmesi amaçlı oluşudur. Mesajı şifrelemeden yollayıp mesajın sonuna kısa bir etiket ekliyoruz. Bu etiketi üretirken gizli anahtar kullanıyoruz.
+
+##### Simetrik kriptosistemler : Blok şifreler ve akan şifreler şifreleme işlemi için kullanılmaktadır. MAC verinin ya da mesajı yollayan kaynağını doğrulamak için kullanılmaktadır.
+##### Asimetrik kriptosistemler : Asimetrik kriptografi anahtar paylaşımı , açık anahtar şifreleme ve dijital imza gibi değişik türden algoritmalardan oluşmaktadır.
+
+
 
 
