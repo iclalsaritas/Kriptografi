@@ -11,7 +11,7 @@
 ##### - Blok Şifre
 ##### - Blok Şifre Tasarımı
 ##### - Feistel Şifreler ve DES
-##### - AES ve Brute Force Saldırısı
+##### - AES 
 ##### - Blok Şifre Çalışma Prensibi
 
 #### 3) Akan Şifreler
@@ -157,7 +157,12 @@ ________________________________________________________________________________
 ##### Döngü sayısı : 16
 ![3](https://github.com/iclalsaritas/Kriptografi/assets/97543719/4427dd74-1183-4e5e-a3cb-e0398d4971cb)
 
-##### - AES ve Brute Force Saldırısı
+##### - AES 
+##### Baktılar DES kolay kırılıyor, AES ortaya çıkıyor. AES (Advanced Encryption Standard)/Rijndael. 2001 yılında NIST tarafından standart yapılmıştır (AES yarışması kazananı). Diğer finalistler SERPENT,TWOFISH, RC6 ve MARS.
+##### Blok uzunluğu : 128 bit
+##### Anahtar uzunluğu : 128, 192, 256 bit
+##### Döngü sayısı : 10, 12, 14 (Anahtar uzunluğuna bağlıdır.)
+##### Bilinen ataklar etkisizdir.
 
 
 
