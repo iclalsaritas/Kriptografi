@@ -88,5 +88,9 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 #### 2) Blok Şifreler
+##### Bu bölümde şifre tasarımlarına geçmeden önce ufak bir muhabbet gerçekleştirelim. Encoding, algoritmalar ve kriptosistemlerden konuşalım biraz.
+##### Biz biliyorduk ki eski şifreler genellikle harf değişimleri kullanılarak kağıt-kalem işleriyle yapılıyordu. Günümüze doğru yaklaştığımızda durum değişti çünkü teknolojinin gelişmesiyle dijitalleşme başladı. E haliyle veriler bitlerden yani 0 ve 1 lerden oluşur vaziyete geldi. 
+##### Encoding kısacası insanların ya da makinelerin aynı dili konuşması için seçtiği bir karakter tablosu şeklinde düşünebiliriz. En bilindik encoding tablosu ASCII tablosudur. Bu tabloda bazı Türkçe karakterler bulunmadığından utf-8 gibi encodingler kullanmamız gerekiyor.
+![1](https://github.com/iclalsaritas/Kriptografi/assets/97543719/e3ecb4ae-c872-474e-b565-84bca6048f3e)
 
 
