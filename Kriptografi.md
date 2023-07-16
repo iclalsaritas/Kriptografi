@@ -135,6 +135,13 @@ ________________________________________________________________________________
 ##### B bitlik girdi iki parçaya bölünür. Döngü fonksiyonu önce bir parçaya uygulanır ve elde edilen çıktı diğer parça ile işleme sokulur. Daha sonra iki parça yer değiştirir. Bu sayede bir sonraki döngüde bu sefer işleme koyulmamış parça döngü fonksiyonundan etkilenir. Görselle daha iyi anlaşılabilir :
 ![2](https://github.com/iclalsaritas/Kriptografi/assets/97543719/410763b1-287b-4a49-8582-1f4abd301632)
 ##### Bakın burada şifreli metni ele geçiren kişi, sağ parçayı gizli anahtarı bildiğinden dolayı döngü fonksiyonuna katarak yukarıya doğru çıkar ve düz metne ulaşmış olur. 
+##### SPN ve Feistel artılarını inceleyecek olursak : 
+##### Artılar
+##### Feistel : Şifreleme ve deşifreleme algoritmaları tamamen aynıdır. Sadece döngü anahtarlarının sırası değiştirilir.
+##### SPN : Tek döngü girdinin tamamını etkilemektedir. 
+##### Eksiler
+##### Feistel : Tek döngü girdinin sadece yarısını etkilemektedir.
+##### SPN : Deşifreleme işlemi değişim ve permütasyon tabakalarının tersini de gerektirmektedir. 
 
 ##### Bir şifre birçok karmaşık operasyon kullanılarak tasarlanmak yerine, genellikle döngü ismini verdiğimiz bir fonksiyonun r kez tekrarlanması şeklinde tasarlanır. Çünkü buradaki anafikir şu, eğer son derece karmaşık bir tasarım yaparsanız bu tasarımın iyi olup olmadığını test etmemiz zor olacaktır. Dolayısıyla tasarladığımız şeyin güvenli olup olmadığını kontrol etmek zorlaşacaktır.
 ##### Anahtar kullanımı : Her döngüde gizli anahtarı direkt olarak kullanmak yerine, bir anahtar kullanma algoritması ile gizli anahtardan her döngüde kullanılmak üzere ayrı bir döngü anahtarı oluşturulur.
