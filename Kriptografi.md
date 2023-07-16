@@ -173,6 +173,14 @@ ________________________________________________________________________________
 ##### Anahtar Üretimi | k bitlik güvenlik için kullanılacak k bitlik anahtarın rastgele üretilmiş olması lazım.
 ##### Çözüm | Kriptografik açıdan güvenli rastgele sayı üreteçleri ve parola tabanlı anahtar üretim algoritmaları.
 
+
+
 ##### - Blok Şifre Çalışma Prensibi
+##### Bir önceki bölümde blok şifreleri tanımlarken verdiğim bütün şifre örneklerinde verdiğim algoritmalar belli bir blok uzunluğunda girdi alıp aynı blok uzunluğunda çıktı alıyordu. Dolayısıyla blok uzunluğu 16 bit olan bir blok şifrenin sanki girdisi hep 16 bit mış gibi bütün bu örnekleri vermiştim. Ama pratikte kullanırken şifreleyeceğimiz veri, çok daha kısa ya da çok daha uzun olabilir. 2-3 bit gibi kısa bir veriyi de şifreleyecek olabiliriz ama 1 terabayt gibi veriyi de şifreleyecek olabiliriz. Dolaysıyla pratikte bir yöntem seçmek gereklidir. Blok şifre kullanırken 2 sorun ortaya çıkar :
+##### Blok şifreler blok uzunluğu kadar girdi aldıkları için, 2 bayt gibi blok uzunluğundan kısa düz metinler nasıl şifrelenmelidir? Blok uzunluğundan daha uzun düz metinler nasıl şifrelenmelidir?
+##### Bu iki problemin pratikte nasıl yanlış sonuçlar doğurabileceğini görebilmek için motivasyonu açıklamak gerekiyor. 1. motivasyon, eğer düz metin blok uzunluğundan kısaysa, kalan boşlukları 0 bitleriyle doldurabiliriz (Dolgu/Padding).
+##### Problem | Şifreli metni deşifre eden kişi düz metnin sonundaki 0 bitlerinin dolgudan mı kaynaklandığını yoksa düz metnin kendisinin mi olduğunu ayırt edemez. Örneğin, 64 bitlik AB12F3955CDD2F00 bloğunu düşünelim. Sondaki 0 baytının dolgudan mı kaynaklandığını bilemeyiz.
+##### Klasik Şifrelerde Dolgu
+##### Dolgu yöntemi klasik şifrelerde mesajın başında ve sonunda uygulanmaktadır. Resmi mesajların başını ya da sonunu tahmin etmek zor değildir. Dolayısıyla şifreli metni ele geçirenler aynı zamanda düz metnin de bir kısmını bilir hale gelmektedir. Bunu engellemek için düz metnin başına ve sonuna rastgele kelimeler eklenir. Bu fazladan kelimeler deşifre işleminden sonra ayıklanır.
 
 
