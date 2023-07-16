@@ -117,6 +117,21 @@ ________________________________________________________________________________
 ##### Günümüzde b= 64 ya da 128 bit ve |k| = 128 ,192 ya da 256 bit olarak seçilir. Ne kadar yüksek bit seçersen o kadar sağlam bir güvenliğe sahip olursun. Bu yüzden bitini uzun tutmanda fayda var.
 
 ##### - Blok Şifre Tasarımı
+##### Blok şifre tasarlarken neye dikkat etmek gerekir? 
+##### Claude Shannon
+##### Bilgi Teorisinin babası olarak kabul edilir.
+##### 2. Dünya Savaşında kriptanaliz alanına katkı sağlamıştır.
+##### Communication Theory of Secrecy Systems  başlıklı makalesinde şifre tasarımı için karmaşa (Confusion) ve yayılım (Diffusion) fikirlerini önermiştir.
+##### Karmaşa : Şifreli metin ve anahtar arasındaki ilişkinin son derece kompleks ve kapsayıcı olması.
+##### Yayılım : Düz metindeki istatistiksel zafiyetler (Tekrarlar) şifreleme sırasında şifrenin her yanına nüfuz ederek yok olmalıdır.
+
+##### NOT ! Bu karmaşa ve yayılım fikirleri ölçülebilir kavramlar değildir. Soyutturlar. Haliyle tasarım sırasında tercih ettiğimiz parametreler, fonksiyonlar ve işlemler bu kavramlar açısından en iyi olacak şekilde seçilmeye çalışılmaktadır.
+
+##### Blok şifre tasarımını iki alana ayırabiliriz : 
+##### Değişim Permütasyon Ağı
+##### Feistel Ağı
+##### Bir şifre birçok karmaşık operasyon kullanılarak tasarlanmak yerine, genellikle döngü ismini verdiğimiz bir fonksiyonun r kez tekrarlanması şeklinde tasarlanır. Çünkü buradaki anafikir şu, eğer son derece karmaşık bir tasarım yaparsanız bu tasarımın iyi olup olmadığını test etmemiz zor olacaktır. Dolayısıyla tasarladığımız şeyin güvenli olup olmadığını kontrol etmek zorlaşacaktır.
+##### Anahtar kullanımı : Her döngüde gizli anahtarı direkt olarak kullanmak yerine, bir anahtar kullanma algoritması ile gizli anahtardan her döngüde kullanılmak üzere ayrı bir döngü anahtarı oluşturulur.
 
 
 
