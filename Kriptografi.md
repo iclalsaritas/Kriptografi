@@ -127,6 +127,10 @@ ________________________________________________________________________________
 
 ##### NOT ! Bu karmaşa ve yayılım fikirleri ölçülebilir kavramlar değildir. Soyutturlar. Haliyle tasarım sırasında tercih ettiğimiz parametreler, fonksiyonlar ve işlemler bu kavramlar açısından en iyi olacak şekilde seçilmeye çalışılmaktadır.
 
+##### Bir şifre birçok karmaşık operasyon kullanılarak tasarlanmak yerine, genellikle döngü ismini verdiğimiz bir fonksiyonun r kez tekrarlanması şeklinde tasarlanır. Çünkü buradaki anafikir şu, eğer son derece karmaşık bir tasarım yaparsanız bu tasarımın iyi olup olmadığını test etmemiz zor olacaktır. Dolayısıyla tasarladığımız şeyin güvenli olup olmadığını kontrol etmek zorlaşacaktır.
+##### Anahtar kullanımı : Her döngüde gizli anahtarı direkt olarak kullanmak yerine, bir anahtar kullanma algoritması ile gizli anahtardan her döngüde kullanılmak üzere ayrı bir döngü anahtarı oluşturulur.
+
+
 ##### Blok şifre tasarımını iki alana ayırabiliriz : 
 ##### Değişim Permütasyon Ağı : Bir döngü 3 katmandan oluşur. Anahtar ekleme, değişim ve permütasyon. Anahtar ekleme kısmında anahtar düz metin ile işleme sokulur. Değişim kısmında karmaşıklık sağlanır. Permütasyon kısmında dağılım sağlanır. Bu yapıya örnek şifreler AES ve PRESENT verebiliriz. AES şu an dünyada en çok kullanılan şifreleme algoritmasıdır. PRESENT  hafif uygulamalar hafif şifreler için önerilir. Söylediklerimin özetini şekil üzerinden gösterirsem : 
 ![1](https://github.com/iclalsaritas/Kriptografi/assets/97543719/3a8b712d-944c-4273-a2ad-b538a8a48a0c)
@@ -146,8 +150,11 @@ ________________________________________________________________________________
 ##### Feistel : Tek döngü girdinin sadece yarısını etkilemektedir.
 ##### SPN : Deşifreleme işlemi değişim ve permütasyon tabakalarının tersini de gerektirmektedir. 
 
-##### Bir şifre birçok karmaşık operasyon kullanılarak tasarlanmak yerine, genellikle döngü ismini verdiğimiz bir fonksiyonun r kez tekrarlanması şeklinde tasarlanır. Çünkü buradaki anafikir şu, eğer son derece karmaşık bir tasarım yaparsanız bu tasarımın iyi olup olmadığını test etmemiz zor olacaktır. Dolayısıyla tasarladığımız şeyin güvenli olup olmadığını kontrol etmek zorlaşacaktır.
-##### Anahtar kullanımı : Her döngüde gizli anahtarı direkt olarak kullanmak yerine, bir anahtar kullanma algoritması ile gizli anahtardan her döngüde kullanılmak üzere ayrı bir döngü anahtarı oluşturulur.
+##### - DES (Data Encryption Standard) 
+##### IBM tarafından 1970 zamanlarında tasarlanmıştır. Önceki tasarımlar Feistel tarafından yapılmıştır. 1976 yılında NSA değişim kutularını (S-box) değiştirerek şifreyi değiştirmiştir. Bu esasında olumlu bir harekettir ancak anahtar uzunluğunun kısalmasına sebep olduğu için güvenliğini azaltmıştır. 1990 zamanlarından sonra anahtar uzunluğunun kısa olması sebebiyle kullanılamaz haşe gelmiştir.
+##### Blok uzunluğu : 64 bit
+##### Anahtar uzunluğu : 56 bit
+##### Döngü sayısı : 16
 
 
 
