@@ -15,7 +15,6 @@
 ##### - Blok Şifre Çalışma Prensibi
 
 #### 3) Akan Şifreler
-##### - Vernam Şifresi
 ##### - Senkron Şifreler
 ##### - Asenkron Şifreler
 
@@ -195,4 +194,4 @@ ________________________________________________________________________________
 ##### Çalışma yöntemi seçimi : Çalışma yöntemi seçilirken şifreleme işleminin yapılacağı koşullar, güvenlik ve performans dikkate alınmalıdır.
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-#### 3) Akan Şifreler
+
