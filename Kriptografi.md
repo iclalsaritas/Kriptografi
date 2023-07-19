@@ -286,4 +286,10 @@ ________________________________________________________________________________
 ##### Çözüm : Parola özeti yerine rastgele üretilmiş bir salt değeri parola sonuna eklenerek parola|salt özeti veritabanında tutulur. Dolayısıyla sözlük saldırısı yapacak saldırganın her salt değeri için önceden ayrı bir tablo oluşturması gerekir lakin bu işlem ve hafıza gereklilikleri nedeniyle mümkün değildir.
 ##### Kaba Kuvvet Saldırısı : Özet değeri ele geçirildikten sonra her parola tek tek denenir. Kullanıcıların kısa ve kolay hatırlanır parolalar seçtiği durumlarda işe yarar.
 ##### Çözüm : Bir parolanın özetini kullanmak yerine, o özet çıktısını tekrar tekrar özet fonksiyonuna sokarak en son elde edilen özet değerini kullanabiliriz. Mesela bu işlemi 10000 kez yaparsak saldırganın işi 10000 kat zorlaşacaktır.
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+#### 5) Açık Anahtar Kriptografisi
+##### Esas hedefler güvenli mesaj transferi, kimlik doğrulama (Dijital imza) ve anahtar değişimidir (Bu sayede güvensiz bir haberleşme kanalı üzerinden simetrik anahtar transferi mümkün olmuştur).
+
+##### - Diffie-Hellman Anahtar Değişimi
 
