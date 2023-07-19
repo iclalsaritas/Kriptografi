@@ -261,6 +261,8 @@ ________________________________________________________________________________
 ##### Yine Ronald Rivest tarafından 1991'de MD4'ün yerine geçmesi için tasarlanmıştır. Blok uzunluğu 512 bit, özet uzunluğu 128 bit, döngü sayısı 64.
 ##### Çakışma Dayanıklılığı : Çakışma üretmek için 2^18 işlem yetiyor yani 1 saniyeden kısa. 
 ##### Ön Görüntü Dayanıklılığı : 2^123.4
+![s](https://github.com/iclalsaritas/Kriptografi/assets/97543719/5db81512-214a-4bf7-ac31-c41c0bec7509)
+
 ##### 2004 yılında aynı MD5 özeti verecek iki farklı dosyanın nasıl yaratılacağı gösterildi. 2008 yılında sahte SSL sertifikası oluşturmanın mümkün olduğu gösterilmiş ve sertifika otoritelerinin MD5 kullanmayı bırakmaları tavsiye edildi. 2012 yılında Flame zararlı yazılımı MD5 çakılmalarını kullanarak sahte Windows kod imzalama sertifikası kullanıldı. Kriptografik açıdan kabul edilmesi imkansız bir çakışma örneği :
 ![aaaaa](https://github.com/iclalsaritas/Kriptografi/assets/97543719/0304a7d0-f4f4-4531-b1a1-4001a2874267)
 ##### Özellikle de bulut hizmetlerinde MD5 kullanılması sistemin darmadağın olmasını kaçınılmaz kılacaktır. Kullanıcıların dosyaları bekledikleri gibi çalışmayacaktır çünkü bazı parçalar başka dosyalarla aynı özet değerlerini vereceği için dosyalar bir noktadan sonra bozulacaktır.
