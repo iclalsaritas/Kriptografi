@@ -212,4 +212,7 @@ ________________________________________________________________________________
 ![2 ,](https://github.com/iclalsaritas/Kriptografi/assets/97543719/e2ca9ec4-63c3-4bab-9d33-bdf70f4fb183)
 
 ##### - Senkron Akan Şifreler
-##### Kısa bir anahtardan uzunca bir anahtar dizisi üreterek one time pad gibi çalışmayı hedeflemektedir. Gizli anahtar rastgele seçilir. Üretilen anahtar dizisi artık sözde rastgeledir çünkü kısa bir bilgiden çook daha uzun bir bilgi üreteceğimizden mütevellit böyle söyleriz. Dolayısıyla akan şifre alanındaki çalışmaların büyük kısmı ne tür dizilerin rastgelelik özellikleri gösterdiğini tespit etmek üzerinedir. Birçok teknik vardır en güzel örneklerden birisi Linear Feedback Shift Register 
+##### Kısa bir anahtardan uzunca bir anahtar dizisi üreterek one time pad gibi çalışmayı hedeflemektedir. Gizli anahtar rastgele seçilir. Üretilen anahtar dizisi artık sözde rastgeledir çünkü kısa bir bilgiden çook daha uzun bir bilgi üreteceğimizden mütevellit böyle söyleriz. Dolayısıyla akan şifre alanındaki çalışmaların büyük kısmı ne tür dizilerin rastgelelik özellikleri gösterdiğini tespit etmek üzerinedir. Birçok teknik vardır en güzel örneklerden birisi Linear Feedback Shift Register :
+![09](https://github.com/iclalsaritas/Kriptografi/assets/97543719/3fa11d53-1347-4ec8-84f2-3cd46583c0a2)
+
+
