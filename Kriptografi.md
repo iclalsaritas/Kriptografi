@@ -229,3 +229,24 @@ ________________________________________________________________________________
 
 ##### - Asenkron Akan Şifreler
 ##### Asenkron akan şifreler senkron bozulduğunda kendi kendine senkronu geri sağlayabilmektedirler. Bu şifreler bir sonraki iç durumu belirlerken anahtar bitlerini ve daha önce ürettikleri şifreli metin bitlerinin son t tanesini kullanırlar. Aktif bir saldırgan şifreli metin bitlerini değiştirse, silse ya da ekleme yapsa bile deşifre eden kişi t adet şifreli metin bitini düzgün şekilde aldığı anda senkron tekrar sağlanmış olur. Aktif saldırganın yaptığı değişiklikler sadece t adet bitin düzgün deşifre edilmesini engeller. Bu tür akan şifrelerde de verinin bütünlüğü ve veri kaynağının doğrulanması için ek önlemler alınmalıdır. 
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+#### 4) Özet (Hash) Fonksiyonlar
+##### Farklı uzunluklarda girdi alabilip hep aynı n bit uzunlukta çıktı veren fonksiyonlara özet fonksiyon değil. 
+##### Kriptografik özet fonksiyonların şu özellikleri sağlamasını bekleriz :
+##### Ön görüntü dayanıklılığı, ikinci ön görüntü dayanıklılığı ve çakışma dayanıklılığı. Ayrıca çıktıların rastgelelik özellikleri göstermesini bekliyoruz.
+
+##### 1. Ön Görüntü Dayanıklılığı : Bir y çıktısı verildiğinde, bu çıktıyı verecek bir x girdisi bulmak zor olmalıdır h(x)=y . Bir kaba kuvvet saldırısı 2^n deneme gerektirmelidir. Örnek :
+##### Bir veritabanında parolaları (Kullanıcıadı,parola) şeklinde tutmak yerine (Kullanıcıadı,h(parola)) şeklinde tutmak gerekir. Veritabanını çalan bir saldırgan kullanıcı parolasını ele geçirebilmek için kullanılan özet fonksiyonda ön görüntü bulması gerekmektedir. 
+##### 2. Ön Görüntü Dayanıklılığı : Bir y çıktısı h(x1)=y eşitliği sağlayan x1 girdisi verildiğinde, h(x2)=y eşitliğini sağlayacak ikinci bir x2 girdisi bulmak zor olmalıdır. Bir kaba kuvvet saldırısı 2^n deneme gerekirmelidir. Örnek :
+##### Bilgisayarlarınızdaki ya da bulut dosyalarınızın özet değerlerini tutun. Eğer saldırgan dosyalarınıza zararlı bir yazılım yüklediğinde hala aynı özet değerini veriyorsa, saldırgan sizi ya da bulut hizmeti sunucusunu kandırabilir.
+##### 3. Çakışma Dayanıklılığı : h(x1)=h(x2)= y eşitliğini sağlayacak iki x1 ve x2 girdisini bulmak zor olmalıdır. Bir kaba kuvvet saldırısı doğum günü paradoksu nedeniyle 2^n/2 deneme gerektirmelidir. Örnek :
+##### Hacker hazırladığı x1 sürücü dosyası için eğer çakışma güvenliği yoksa bu sürücünün içine zararlı kodlar ekleyip oluşturduğu x2 sürücü dosyası ile aynı y değerini elde edebilir. Hacker işletim sistemi firmasına x1 analiz için gönderir. x1 zararsız olduğu için işletim sistemi firması h(x1)= y değerini elektronik olarak imzalar. Hacker zararlı kod içeren x2 sürücüsünü kullanıcılara ulaştırdığında h(x2)= y olduğu için işletim sistemi bu sürücüyü imzaladığını düşünecek ve zararsız olduğunu zannedecek :(
+##### Ha bu arada doğum günü paradoksu ne ola ki ?
+##### Bir odada en az kaç kişi olduğunda, aynı doğum gününe sahip iki insanın o odada bulunma ihtimali 1/2'den fazla olur? Bu sorunun cevabı daha fazla beklendiğinden paradoks olarak isimlendirilmiştir. Çünkü cevap 23.
+
+##### - Blok Şifreden Hash Fonksiyon Tasarlamak
+##### Özet fonksiyonlar kriptografide çok yoğun şekilde kullanıldığı için kriptografinin İsviçre Çakısı olarak bilinir. Bazı örnekler :
+##### Dijital imza, mesaj doğrulama kodları, rastgele sayı üreteçleri, anahtar üretme fonksiyonları...
+![zz](https://github.com/iclalsaritas/Kriptografi/assets/97543719/d18bf776-74ec-449d-a98b-986ff6f087fb)
+
