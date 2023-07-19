@@ -309,6 +309,8 @@ ________________________________________________________________________________
 ##### - Dijital İmza Standardı
 #####  Parametre üretimi yapmak söz konusuysa özen göstermemiz gereken mevzular vardır. Bunlar :
 ##### İyi bir hash fonksiyonu seçmek (SHA2-SHA3 gibi) imzalarken hiçbir zaman mesajı değil özetini imzalarsın çünkü , anahtar uzunlukları L ve N (3072,256) , n bitlik q asal sayısı seçmek, L bitlik asal p modu seçmek öyle ki p-1 sayısı q sayısının bir katıdır. g sayısı seçmek lakin seçerken de çarpma grubu eleman sayısı mod p'de q olacak şekilde seçmelisin. Son olarak parametreler (p,q,g) kullanıcılar arasında paylaşılabilir. Kullanıcı anahtarı üretimine gelirsek,  rastgele bir x gizli anahtarı seçilir öyle ki 0 < x < q , açık anahtar y hesaplanır y = g^x mod p . Son olarak da imzalama işlemine bakalım. İmzalama işlemi için her mesaj için rastgele k sayısı seçilir öyle ki 0 < k < q ,  r = (g^k mod p) mod q hesaplanır. m mesajı için  s = k^-1(hash(m)+xr) mod q hesaplanır. Sonuç olarak (r,s) ikilisi imzadır. Doğrulama işlemi için ise : w = s^-1 mod q hesaplanır. u1 = hash(m).w mod q hesaplanır. u2 = r.w mod q hesaplanır. v = (g^u1 x y^u2 mod p) mod q hesaplanır. Eğer v = r ise imza geçerlidir.
+![ççç](https://github.com/iclalsaritas/Kriptografi/assets/97543719/89e38792-c6f8-468e-a992-4deec122a77d)
+
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ##### | Bu içerik umarım temel bir bakış kazanmanıza yardımcı olmuştur. Sorularınız olursa çekinmeden yazın. Teşekkürler |
