@@ -270,7 +270,8 @@ ________________________________________________________________________________
 
 ##### - SHA1
 ##### 1993 yılında NSA tarafından tasarlandı. Blok uzunluğu 512 bit, özet uzunluğu 160 bit, döngü sayısı 80 dir.
-![lol](https://github.com/iclalsaritas/Kriptografi/assets/97543719/0f405479-6ccf-4895-bce1-35257a99d968)
+![cvc](https://github.com/iclalsaritas/Kriptografi/assets/97543719/1704bcde-09ad-4795-a8ea-a46620f8bdaf)
+
 ##### 2017 yılında Google ekibi tarafından çakışma örneği tespit edilmiştir.
 
 ##### - SHA2
