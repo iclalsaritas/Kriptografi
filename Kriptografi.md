@@ -217,3 +217,15 @@ ________________________________________________________________________________
 
 ##### Akan şifreler düz metni küçük parçalar halinde işliyor. Akan şifrelerin blok şifrelerden ennn temel farkı iç durum dediğimiz bir tür hafızalarının olmasıdır. Bu tür iç durum hem şifreleme üzerinde kullanılmak üzere anahtar dizisi üretir hem de kendisini günceller. Bu üretilen anahtar dizisiyle de düz metinle işleme sokma gerçekleştirilerek şifreli metin üretilir. Dolayısıyla şifreleme işlemindeki iç durum, deşifreleme yapacak kişi için de aynı olmalıdır. Başka bir söyleyişle, haberleşecek kişilerin aynı anahtar dizisini üretebilmeleri için senkron olmaları gerekir.
 ##### ! NOT ! Bazı akan şifreler bir sonraki iç durumu oluştururken düz metni kullanmayabilirler. Bu durumlarda çıktı fonksiyonu anahtar dizisi (keystream) dediğimiz bitleri üretir. Şifreleme fonksiyonuysa anahtar dizisini düz metin ile birleştirir. Bu türdeki akan şifrelere anahtar dizisi üreten şifreler denir.
+
+##### Senkron akan şifrelere son bir özet geçecek olursam :
+##### Senkron akan şifrelerin aynı iç durumda olmaları gerekmektedir. Aynı anahtarı kullanmaları gerekmektedir. Senkron bozulursa da deşifreleme başarısız olur haliyle. Senkron nasıl bozulabilir ?
+##### Cihazlarda hataların olması en basitinden telefonun yere düşmesi bile buna sebep olabilir. Haberleşme kanalındaki problemler mesela bulunduğun binada çok metal varsa ya da Everest zirvelerinde takılmaca yapıyorsan, fazladan şifreli metin bitlerinin eklenmesi, şifreleri metin bitlerinin silinmesi gibi gibi nedenler başarısızlığa örnek olarak gösterilebilir. 
+##### Peki bu bozulmuş senkronu nasıl düzeltirim :
+##### En klasik Türk yöntem yeniden başlatma, Belirli aralıklarla özel işaretler yerleştirmek, Tüm anahtar dizilerini tek tek denemek...
+
+##### Aktif bir saldırgan neler yapabilir ?
+##### Haberleşme kanalına etki edebilenlere aktif saldırgan ismini veriyoruz. Bu şahıslar iletilmek istenen şifreli metin bitlerini silebilir, değiştirebilir ya da yeni bitler ekleyebilir. Şimdi bahsedeceğim kritik durumu dikkatli okuyun lütfen. Bir şifreli metin bitini değiştirmek diğer bitlerin deşifrelenmesine etki etmez arkadaşlar. E haliyle eğer saldırgan hangi şifreli metin bitini değiştirince düz metinde ne tür bir etki yaratacağını biliyorsa, bu etkiyi yarattığında deşifre eden kişi bundan habersiz olacaktır :( Ama şu da varki, değiştirmek yerine silmek ya da yenileri ekleme hamlesine giriştiyse işler değişir. Yani şifreli metin bitlerini silmek ya da yenilerini eklemek o noktadan sonraki bitlerin deşifrelenmesini etkileyeceği için deşifre eden kişi tarafından aktif saldırganın varlığı anlaşılabilir. Dolayısıyla verinin bütünlüğü ve veri kaynağının doğrulanması için ek önlemler alınmalıdır. Doğrulanmış kriptografi algoritmaları bu problemlere çözümler sunar.
+
+##### - Asenkron Akan Şifreler
+
