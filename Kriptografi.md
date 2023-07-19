@@ -268,5 +268,23 @@ ________________________________________________________________________________
 ##### Özellikle de bulut hizmetlerinde MD5 kullanılması sistemin darmadağın olmasını kaçınılmaz kılacaktır. Kullanıcıların dosyaları bekledikleri gibi çalışmayacaktır çünkü bazı parçalar başka dosyalarla aynı özet değerlerini vereceği için dosyalar bir noktadan sonra bozulacaktır.
 
 ##### - SHA1
+##### 1993 yılında NSA tarafından tasarlandı. Blok uzunluğu 512 bit, özet uzunluğu 160 bit, döngü sayısı 80 dir.
+![lol](https://github.com/iclalsaritas/Kriptografi/assets/97543719/0f405479-6ccf-4895-bce1-35257a99d968)
+##### 2017 yılında Google ekibi tarafından çakışma örneği tespit edilmiştir.
+
+##### - SHA2
+##### 2001 yılında yine NSA tarafından tasarlandı. Blok uzunluğu 512 veya 1024 bit, Özet uzunluğu 224, 256, 384 ve 512 bit, döngü sayısı 64 veya 80 bit. Kırılmamış özet fonksiyonu olarak SHA2 örnek verebiliriz.
+![d](https://github.com/iclalsaritas/Kriptografi/assets/97543719/503b84e2-4d0a-4613-ad5d-76d873403142)
+
+##### - SHA3
+##### MD4, MD5 ve SHA1 kırıldı ve geriye sağlam kalan SHA2 kaldı ve önceki tasarımlara benzeyen bir yapısı var. O yüzden eşeği sağlam kazığa bağlama niyetiyle SHA3 yarışması düzenlendi NIST tarafından (2007-20012).
+##### SHA3 blok uzunluğu 1152, 1088, 836, 576 bit, özet uzunluğu 224, 256, 384, veya 512 bit, Döngü sayısı 64 veya 80 bit. Yarışmayı Keccak kazandı ve SHA3 ismini aldı. SHA2 ve SHA3 dışında kullanımlardan kaçınılmalı.
+
+##### - Parola Kırmak
+##### Parolalarınızı asla kaydetmemelisiniz. Onun yerine özetlerini tutmalısınız. Bu sayede sızan veritabanınlarındaki veritabanları güvende kalır. Bunun için özet fonksiyonunun ön görüntü dayanıklılığının olması gerekir.
+##### Sözlük Saldırısı : Bir sözlükteki kelimelerin, birbirleriyle ve sayılarla kombinasyonlarının özetleri önceden hesaplanır. Bu değerler sıralı bir şekilde bir tabloda tutulur. Saldırgan ele geçirdiği veritabanında kendi tablosunda da olan özet değerleri bulursa o parolaları elde eder.
+##### Çözüm : Parola özeti yerine rastgele üretilmiş bir salt değeri parola sonuna eklenerek parola|salt özeti veritabanında tutulur. Dolayısıyla sözlük saldırısı yapacak saldırganın her salt değeri için önceden ayrı bir tablo oluşturması gerekir lakin bu işlem ve hafıza gereklilikleri nedeniyle mümkün değildir.
+#### Kaba Kuvvet Saldırısı : Özet değeri ele geçirildikten sonra her parola tek tek denenir. Kullanıcıların kısa ve kolay hatırlanır parolalar seçtiği durumlarda işe yarar.
+
 
 
