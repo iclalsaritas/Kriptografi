@@ -209,7 +209,8 @@ ________________________________________________________________________________
 ##### Akan Şifreler : Düz metin bit/bayt bloklarına zaman göre değişen bir dönüşüm uygular.
 ##### Bu kısa hatırlatmadan sonra Akan şifrelere devam edelim.
 ##### Akan şifrelerin doğmasının sebebi one time pad den kaynaklanmaktadır. Diğer ismiyle Vernam şifresidir. Tarihsel serüven kısmında ufak bir değinmiştim. One time pad rastgele bitlerden oluşan uzun bir anahtar dizisi kullanır. Anahtar dizisi uzunluğu en az düz metin kadar olmalıdır ve sadece 1 kez kullanılmalıdır. Şifreleme, anahtar dizisinin düz metin bitleriyle XOR'lanmasıdır. Shannon one time pad in kırılamaz olduğunu ispatlamıştır. Çok fazla anahtar dizisine ihtiyaç duyulacağından pratik değildir. Bir örnek :
-![2 ,](https://github.com/iclalsaritas/Kriptografi/assets/97543719/e2ca9ec4-63c3-4bab-9d33-bdf70f4fb183)
+![k](https://github.com/iclalsaritas/Kriptografi/assets/97543719/fcaf25af-530f-41ff-a7d0-e63921c47570)
+
 
 ##### - Senkron Akan Şifreler
 ##### Kısa bir anahtardan uzunca bir anahtar dizisi üreterek one time pad gibi çalışmayı hedeflemektedir. Gizli anahtar rastgele seçilir. Üretilen anahtar dizisi artık sözde rastgeledir çünkü kısa bir bilgiden çook daha uzun bir bilgi üreteceğimizden mütevellit böyle söyleriz. Dolayısıyla akan şifre alanındaki çalışmaların büyük kısmı ne tür dizilerin rastgelelik özellikleri gösterdiğini tespit etmek üzerinedir. Birçok teknik vardır en güzel örneklerden birisi Linear Feedback Shift Register :
