@@ -1,4 +1,4 @@
-###### Merhaba! Kriptografi temeli atmak için nereden başlayacağını bilemiyor ve kaynak arıyor olabilirsin. Emin ol doğru yerdesin. Tarihsel süreçten, akan şifrelere doğru gidilecek bu yolda yeterli çalışma motivasyonuna sahipsen ve içeriğimi okumaya hazırsan daha fazla bekleme, hemen başla :) Defterimin Kriptografi101 kısmı senindir. İlkokul Hocam görmesin ama. İlerlememiz şu başlıklar altında olacaktır :
+###### Merhaba! Kriptografi temeli atmak için nereden başlayacağını bilemiyor ve kaynak arıyor olabilirsin. Emin ol doğru yerdesin. Tarihsel süreçten, akan şifrelere doğru gidilecek bu yolda yeterli çalışma motivasyonuna sahipsen ve içeriğimi okumaya hazırsan daha fazla bekleme, hemen başla :) Defterimin Kriptografi-101 kısmı senindir. İlkokul Hocam görmesin ama .d İlerlememiz şu başlıklar altında olacaktır :
 
 #### 1) Kriptografi Tarihsel Serüveni
 ##### - Temel Kavramlar Hakkında Bilgi Kazandırmak
