@@ -276,11 +276,12 @@ ________________________________________________________________________________
 
 ##### - SHA2
 ##### 2001 yılında yine NSA tarafından tasarlandı. Blok uzunluğu 512 veya 1024 bit, Özet uzunluğu 224, 256, 384 ve 512 bit, döngü sayısı 64 veya 80 bit. Kırılmamış özet fonksiyonu olarak SHA2 örnek verebiliriz.
-![d](https://github.com/iclalsaritas/Kriptografi/assets/97543719/503b84e2-4d0a-4613-ad5d-76d873403142)
+![ııı](https://github.com/iclalsaritas/Kriptografi/assets/97543719/347af279-41e9-4daf-b5c1-bc66298a6c4b)
 
 ##### - SHA3
 ##### MD4, MD5 ve SHA1 kırıldı ve geriye sağlam kalan SHA2 kaldı ve önceki tasarımlara benzeyen bir yapısı var. O yüzden eşeği sağlam kazığa bağlama niyetiyle SHA3 yarışması düzenlendi NIST tarafından (2007-20012).
 ##### SHA3 blok uzunluğu 1152, 1088, 836, 576 bit, özet uzunluğu 224, 256, 384, veya 512 bit, Döngü sayısı 64 veya 80 bit. Yarışmayı Keccak kazandı ve SHA3 ismini aldı. SHA2 ve SHA3 dışında kullanımlardan kaçınılmalı.
+![bbbbbbbbb](https://github.com/iclalsaritas/Kriptografi/assets/97543719/d70c21f9-091f-48ca-8555-0c40a0800173)
 
 ##### - Parola Kırmak
 ##### Parolalarınızı asla kaydetmemelisiniz. Onun yerine özetlerini tutmalısınız. Bu sayede sızan veritabanınlarındaki veritabanları güvende kalır. Bunun için özet fonksiyonunun ön görüntü dayanıklılığının olması gerekir.
