@@ -292,4 +292,19 @@ ________________________________________________________________________________
 ##### Esas hedefler güvenli mesaj transferi, kimlik doğrulama (Dijital imza) ve anahtar değişimidir (Bu sayede güvensiz bir haberleşme kanalı üzerinden simetrik anahtar transferi mümkün olmuştur)
 
 ##### - Diffie-Hellman Anahtar Değişimi
+##### Ayrık Logaritma Problemi : Önceden belirlenen g ve p sayıları için a bilindiğinde g^a = b (mod p) hesaplamak kolaydır. b verildiğinde g^a = b mod eşitliğini sağlayan a sayısını bulmak zordur. Örnek :
+##### 3^x = 7376884875361470534 (mod 18446744073709551615) cevap 127002 . X yerine 1'den başlayıp yazmaya başlasak 127002 denemeden sonra sonucu bulacağımız anlamına gelir saldırı yaparken. Lakin pratikte sayılar daha büyük olduğundan kaba kuvvet saldırısı biraz daha uzun sürecektir.
+##### A kişisi rastgele bir a sayısı seçip B'ye g^a (mod p) sayısını yollasın. B kişisi rastgele bir  b sayısı sçeip A'ya g^b (mod p) sayısını yollasın. A kişisi (g^a)^b = g^ab (mod p) sayısını hesaplasın. B kişisi (g^a)^b = g^ab (mod p) sayısını hesaplasın.
+##### buraya resim gelecek
 
+#####  - RSA Şifreleme Algoritması
+##### En temel haliyle, iki büyük rastgele asal sayı seçeriz. p ve q diyelim bunlara. n = pq hesaplanır. e sayısı seçilir 2 < e < n-1  ((p-1)(q-1) = 1) . d = e^-1 mod ((p-1)(q-1)) hesaplarız. 
+##### Açık anahtarımız (n,e) , Gizli anahtarımız d ( p ve q sayılarını da gizli tutman lazım aklında olsun.) 
+##### Şifreleme 0 < m < n -1 mesajı için c = m^e mod(n) hesaplanır. Deşifreleme m = c^d mod(n)
+
+##### - El-Gamal Şifreleme Algoritması
+##### El Gamal Şifreleme için anahtar üretimi yaparken rastgele bir x seçeriz. y = g^x hesaplarız. Burada açık anahtar y, gizli anahtar x dir. Şifreleme işleminde şifreleme için rastgele r seçeriz (u=g^r, v=my^r) ve yollarız. Deşifreleme için vu^-x = m işlemiyle mesaj m yi elde ederiz.
+
+##### - Dijital İmza Standardı
+#####  Parametre üretimi yapmak söz konusuysa özen göstermemiz gereken mevzular vardır. Bunlar :
+##### İyi bir hash fonksiyonu seçmek (SHA2-SHA3 gibi) imzalarken hiçbir zaman mesajı değil özetini imzalarsın çünkü , anahtar uzunlukları L ve N (3072,256) , n bitlik q asal sayısı seçmek, L bitlik asal p modu seçmek öyle ki p-1 sayısı q sayısının bir katıdır. g sayısı seçmek lakin seçerken de çarpma grubu eleman sayısı mod p'de q olacak şekilde seçmelisin. Son olarak parametreler (p,q,g) kullanıcılar arasında paylaşılabilir. Kullanıcı anahtarı üretimine gelirsek,  rastgele bir x gizli anahtarı seçilir öyle ki 0 < x < q , açık anahtar y hesaplanır y = g^x mod p . Son olarak da imzalama işlemine bakalım. İmzalama işlemi için her mesaj için rastgele k sayısı seçilir öyle ki 0 < k < q ,  r = (g^k mod p) mod q hesaplanır. m mesajı için  s = k^-1(hash(m)+xr) mod q hesaplanır. Sonuç olarak (r,s) ikilisi imzadır. Doğrulama işlemi için ise : w = s^-1 mod q hesaplanır. u1 = hash(m).w mod q hesaplanır. u2 = r.w mod q hesaplanır. v = (g^u1 x y^u2 mod p) mod q hesaplanır. Eğer v = r ise imza geçerlidir.
