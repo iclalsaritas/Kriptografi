@@ -254,14 +254,14 @@ ________________________________________________________________________________
 ##### Blok şifre kullanmayıp kendimiz tasarlamak istersek buna en eski örnek şüphesiz MD4 olur. Ronald Rivest tarafından 1990'da tasarlanmıştır. Blok uzunluğu 512 bit, özet uzunluğu 128 bit, döngü sayısı 48 dir.
 ##### Çakışma Dayanıklılığı : Çakışma üretme mikrosaniye sürüyor. 
 ##### Ön Görüntü Dayanıklılığı : 2^95 işlem.
-![ö](https://github.com/iclalsaritas/Kriptografi/assets/97543719/7df253a7-e5dc-4d4e-b5bc-bfe07c75b3fb)
+![ç](https://github.com/iclalsaritas/Kriptografi/assets/97543719/7acb9db8-d11f-4f3a-8352-91b4eb99c50f)
 
 ##### 2011'e kadar IETF standardıydı ve kendisinden sonraki birçok tasarımı etkiledi. MD5, SHA1...
 ##### - MD5
 ##### Yine Ronald Rivest tarafından 1991'de MD4'ün yerine geçmesi için tasarlanmıştır. Blok uzunluğu 512 bit, özet uzunluğu 128 bit, döngü sayısı 64.
 ##### Çakışma Dayanıklılığı : Çakışma üretmek için 2^18 işlem yetiyor yani 1 saniyeden kısa. 
 ##### Ön Görüntü Dayanıklılığı : 2^123.4
-![s](https://github.com/iclalsaritas/Kriptografi/assets/97543719/5db81512-214a-4bf7-ac31-c41c0bec7509)
+![ss](https://github.com/iclalsaritas/Kriptografi/assets/97543719/18a6e7c1-d5d0-402a-8b27-ae095d5c780b)
 
 ##### 2004 yılında aynı MD5 özeti verecek iki farklı dosyanın nasıl yaratılacağı gösterildi. 2008 yılında sahte SSL sertifikası oluşturmanın mümkün olduğu gösterilmiş ve sertifika otoritelerinin MD5 kullanmayı bırakmaları tavsiye edildi. 2012 yılında Flame zararlı yazılımı MD5 çakılmalarını kullanarak sahte Windows kod imzalama sertifikası kullanıldı. Kriptografik açıdan kabul edilmesi imkansız bir çakışma örneği :
 ![aaaaa](https://github.com/iclalsaritas/Kriptografi/assets/97543719/0304a7d0-f4f4-4531-b1a1-4001a2874267)
@@ -284,7 +284,6 @@ ________________________________________________________________________________
 ##### Parolalarınızı asla kaydetmemelisiniz. Onun yerine özetlerini tutmalısınız. Bu sayede sızan veritabanınlarındaki veritabanları güvende kalır. Bunun için özet fonksiyonunun ön görüntü dayanıklılığının olması gerekir.
 ##### Sözlük Saldırısı : Bir sözlükteki kelimelerin, birbirleriyle ve sayılarla kombinasyonlarının özetleri önceden hesaplanır. Bu değerler sıralı bir şekilde bir tabloda tutulur. Saldırgan ele geçirdiği veritabanında kendi tablosunda da olan özet değerleri bulursa o parolaları elde eder.
 ##### Çözüm : Parola özeti yerine rastgele üretilmiş bir salt değeri parola sonuna eklenerek parola|salt özeti veritabanında tutulur. Dolayısıyla sözlük saldırısı yapacak saldırganın her salt değeri için önceden ayrı bir tablo oluşturması gerekir lakin bu işlem ve hafıza gereklilikleri nedeniyle mümkün değildir.
-#### Kaba Kuvvet Saldırısı : Özet değeri ele geçirildikten sonra her parola tek tek denenir. Kullanıcıların kısa ve kolay hatırlanır parolalar seçtiği durumlarda işe yarar.
-
-
+##### Kaba Kuvvet Saldırısı : Özet değeri ele geçirildikten sonra her parola tek tek denenir. Kullanıcıların kısa ve kolay hatırlanır parolalar seçtiği durumlarda işe yarar.
+##### Çözüm : Bir parolanın özetini kullanmak yerine, o özet çıktısını tekrar tekrar özet fonksiyonuna sokarak en son elde edilen özet değerini kullanabiliriz. Mesela bu işlemi 10000 kez yaparsak saldırganın işi 10000 kat zorlaşacaktır.
 
