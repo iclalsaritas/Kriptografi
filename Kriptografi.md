@@ -49,7 +49,8 @@ ________________________________________________________________________________
 ##### Düz metni şifreli metne, şifreli metni düz metne dönüştüren algoritma çiftine kriptosistem/şifre adını veriyoruz.
 ##### Şifreleme işlemi sırasında kullanılan gizli bilgiye de anahtar diyoruz. (İlerleyen bölümde anlatacağım.)
 ##### Harika bir çizimle işi özetleyip diğer konumuza geçiş yapıyorum.
-![90](https://github.com/iclalsaritas/Kriptografi/assets/97543719/55866fb5-43b8-422a-93b7-6fd61a9e58f8)
+
+![90](https://github.com/iclalsaritas/Kriptografi/assets/97543719/b0121869-ad1c-43b5-8845-245be36d6547)
 
 ##### - Tarihî Şifreler
 ##### Teknolojinin pasif olduğu eski yıllarda elle yazma şeklinde yapılan yöntemdir. Bu yöntemde kağıt-kalem kullanıldığından kriptosistemin absürt bir karmaşıklığa sahip olmaması gerekir. Genelde harf değişim sistemi kullanılır. Bilgi sızdırmamak için şifreli metindeki noktalama işaretleri ve boşluklar genelde silinir. Enigma bölümüne geldiğimizde son cümlede bahsettiğim bilgi sızdırmama mevzusuna güzel bir örneğim olacak.
