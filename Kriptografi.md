@@ -265,7 +265,8 @@ ________________________________________________________________________________
 ![qqq](https://github.com/iclalsaritas/Kriptografi/assets/97543719/93d97b46-b5a7-4138-8dd6-229144e135cb)
 
 ##### 2004 yılında aynı MD5 özeti verecek iki farklı dosyanın nasıl yaratılacağı gösterildi. 2008 yılında sahte SSL sertifikası oluşturmanın mümkün olduğu gösterilmiş ve sertifika otoritelerinin MD5 kullanmayı bırakmaları tavsiye edildi. 2012 yılında Flame zararlı yazılımı MD5 çakılmalarını kullanarak sahte Windows kod imzalama sertifikası kullanıldı. Kriptografik açıdan kabul edilmesi imkansız bir çakışma örneği :
-![aaaaa](https://github.com/iclalsaritas/Kriptografi/assets/97543719/0304a7d0-f4f4-4531-b1a1-4001a2874267)
+![ççç](https://github.com/iclalsaritas/Kriptografi/assets/97543719/bcfc9e10-7421-4c57-a34d-37350610eec5)
+
 ##### Özellikle de bulut hizmetlerinde MD5 kullanılması sistemin darmadağın olmasını kaçınılmaz kılacaktır. Kullanıcıların dosyaları bekledikleri gibi çalışmayacaktır çünkü bazı parçalar başka dosyalarla aynı özet değerlerini vereceği için dosyalar bir noktadan sonra bozulacaktır.
 
 ##### - SHA1
