@@ -255,7 +255,7 @@ ________________________________________________________________________________
 ##### Blok şifre kullanmayıp kendimiz tasarlamak istersek buna en eski örnek şüphesiz MD4 olur. Ronald Rivest tarafından 1990'da tasarlanmıştır. Blok uzunluğu 512 bit, özet uzunluğu 128 bit, döngü sayısı 48 dir.
 ##### Çakışma Dayanıklılığı : Çakışma üretme mikrosaniye sürüyor. 
 ##### Ön Görüntü Dayanıklılığı : 2^95 işlem.
-![ç](https://github.com/iclalsaritas/Kriptografi/assets/97543719/7acb9db8-d11f-4f3a-8352-91b4eb99c50f)
+![jjj](https://github.com/iclalsaritas/Kriptografi/assets/97543719/50e38edd-e6ca-44c7-87e6-c580cfb82385)
 
 ##### 2011'e kadar IETF standardıydı ve kendisinden sonraki birçok tasarımı etkiledi. MD5, SHA1...
 ##### - MD5
