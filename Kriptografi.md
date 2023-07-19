@@ -29,7 +29,7 @@
 ##### - Diffie-Hellman Anahtar Değişimi
 ##### - RSA Şifreleme Algoritması
 ##### - El-Gamal Şifreleme Algoritması ve Dijital İmza 
-______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 #### 1) Kriptografi Tarihsel Serüveni
 ##### - Temel Kavramlar Hakkında Bilgi Kazandırmak 
 ##### Kriptoloji : Güvenli olmadığını varsaydığımız bir iletişim kanalında güvenli iletişim ile ilgilenir. Bunu günlük hayatta kullandığınız iletişim yöntemleri olarak düşünebilirsiniz. Mektuplaşıyorsanız bir mektubu, hatta havada uçan güvercinden gelen postayı, telefon görüşmesi yapıyorsanız da bir telefonu düşünebilirsiniz. Burada asıl önemli olan, kullanılan iletişim aracının ne olduğu değildir. Güvende miyim? Birisi beni dinliyor mu? endişenizin şiddetinin ne olduğudur. Yani kriptoloji, yollayacağımız mesajı şifreli şekilde yollayıp deşifre edilmemizi engelleyen bir bilim dalıdır.
@@ -54,17 +54,19 @@ ________________________________________________________________________________
 ##### - Tarihî Şifreler
 ##### Teknolojinin pasif olduğu eski yıllarda elle yazma şeklinde yapılan yöntemdir. Bu yöntemde kağıt-kalem kullanıldığından kriptosistemin absürt bir karmaşıklığa sahip olmaması gerekir. Genelde harf değişim sistemi kullanılır. Bilgi sızdırmamak için şifreli metindeki noktalama işaretleri ve boşluklar genelde silinir. Enigma bölümüne geldiğimizde son cümlede bahsettiğim bilgi sızdırmama mevzusuna güzel bir örneğim olacak.
 ##### Sezar Şifresi : Julius Caesar MÖ 1. yüzyılda askerî mesajların güvenliğini korumak için özgün bir yöntem geliştirmiştir. Bu yöntemde her harf, alfabedeki kendisinden n önceki harf ile değiştirilir. Hemen örneğimiz gelsin :
-![2](https://github.com/iclalsaritas/Kriptografi/assets/97543719/f99e9a0a-c511-488f-8b04-1777bd1943ab)
+![10](https://github.com/iclalsaritas/Kriptografi/assets/97543719/4c46e0cc-70ef-4fb6-9822-b008408b3ebe)
+
 ##### Şimdi şöyle bir gerçek vardır ki Sezar şifresi, alfabe 26 harf olduğuna göre sadece 25 farklı kaydırma yöntemi olduğu için kolayca kırılabilir. Modern bilgisayarlar ve şifre kırma yöntemleri, brute force saldırıları, frekans analizi ve dilbilgisi özelliklerini kullanarak Sezar şifresini hızlı bir şekilde kırabilirler. Sonuç olarak, Sezar şifresi kullanıldığında güvenlik düzeyi çok düşüktür. Biz buna anahtar uzayı çok küçük diyoruz. Yani anahtarı tahmin etmek çok kolay.
 ##### Basit Monoalphabetic Değişim : Her harf bir harf ile yer değiştirir. A harfi artık K, B harfi artık U harfi gibiymiş gibi davranılır. Örnek :
-![3](https://github.com/iclalsaritas/Kriptografi/assets/97543719/1cb906b3-3cf9-4598-8aaa-405905c526a6)
+![11](https://github.com/iclalsaritas/Kriptografi/assets/97543719/8eafd602-6b75-4335-a47d-422b8dd9091d)
+
 ##### Peki İclalciğim madem bu kadar çok olasılığın mümkün olduğu bir şifreleme yönteminden bahsediyorsun. Öyleyse neden brute force ataklarından korunmak için Monoalphabetic değişim kullanmayalım? Çünkü arkadaşım, dildeki tekrar ve frekans analizi yöntemiyle bu 26! olasılıklı şifre kolayca kırılabiliyor. Frekans Analizi nedir hemen sırası gelmişken anlatayım.
 
 ##### - Frekans Analizi 
 ##### 9.yy.'da  Al-Kindi tarafından önerilmiştir. Dildeki tekrara dayanmaktadır. Bu alan hakkında kitabı da mevcuttur hatta bir kopyası Topkapı Müzesinde bulunuyor. Belli bir ücret karşılığı sayfaların fotoğrafını çekebiliyoruz diye hatırlıyorum. Dildeki tekrar derken ne demek istiyoruz? Mesela Al-Kindi diyor ki, herhangi bir dil için o dilde yazılmış olan uzun bir yazı bul ve o yazıda en çok hangi harf geçiyor notunu al. Bu dil Türkçe ise uzun bir metinde en çok A harfinin tekrarladığını görürsün. Bu şekilde en çok tekrarlanan ikinci, üçüncü, dördüncü... harf diye gittiğinizde, bu harfleri listede yerine koyduğunuz harflerle eşleştirip şifreyi kırabilirsiniz. Frekans Analizinde işin özü bu şekildedir.
 
 ##### Playfair : Yıl 1854, Viktorya Döneminden Charles Wheatstone tarafından kullanılması tavsiye ediliyor, dönemin İngiliz bilimcisi ve siyasetçisi olan Lord Playfair tarafından da destekleniyor. Şu ana kadarki anlattığım şifrelerin daha karmaşık olmasını burada deneyebiliriz. Bu şifrelemede, anahtarın ve alfabenin geri kalanının yer aldığı 5x5 tablo kullanılıyor. Eğer anahtarı ve kuralını ezberlerseniz(4 adet kural var) sistemi rahatlıkla kullanabilirsiniz. Neden 5x5 tablo kullanıyoruz gibi bir soru işareti belirebilir belki zihninizde. Esasında en başında dönem ve İngiliz diye belirtmemdeki amaç sadece genel kültür kazanmanız değil, aynı zamanda İngiliz diye belirtirsem İngilizlerin 26 harf kullandığı ve böylece 5x5 tablo kullanılması gerektiği kültürünü ezbere olarak değil de mantıksal olarak sizlere kattığımdan emin olmuş olurum diye düşündüm. Şimdi hemen örneğimi gösteriyorum : 
-![4](https://github.com/iclalsaritas/Kriptografi/assets/97543719/1e61b8a5-c9ed-4be7-ad58-dbdcaf3fec3c)
+![12](https://github.com/iclalsaritas/Kriptografi/assets/97543719/e090c9bd-170b-4071-985a-57633fd2f15d)
 
 ##### Önce anahtar yazılır. Aynı harfler bir kez kullanılır. 5x5 tablonun geri kalanı kalan harflerle doldurulur. I ve J harfi 25 harfe inmek için aynı kutuya konur. Sık kullanılan harf olmadığından biraz kurban harf oldu diyebiliriz. 
 ##### Şimdi gelelim sistemi kullanabilmek için bilmemiz gerekiyor dediğim 4 kuralı anlatmaya.
@@ -73,7 +75,8 @@ ________________________________________________________________________________
 ##### 3- Eğer iki harf aynı sütundaysa, her half altındaki harfle değiştirilir. Peki ya  sütun sonundaysa? Bir harf sütun sonundaysa sütun başıdakiyle değiştirilir.
 ##### 4- Eğer harfler aynı sütun veya satırda değilse, harfler bir dikdörtgenin 2 köşesi olarak düşünülür ve harfler karşılarındaki köşede yer alan harf ile değiştirilir. 
 ##### Biraz karmaşık mı geldi ? Hemen harika çizimlerime devam ediyorum :
-![5](https://github.com/iclalsaritas/Kriptografi/assets/97543719/be7a379f-bb8d-4bb2-9022-058cac0794da)
+![13](https://github.com/iclalsaritas/Kriptografi/assets/97543719/0f30131e-cfe4-4b99-af98-6f01fcb6d05e)
+
 ##### Frekans Analizi için bazı önlemleri konuşalım.
 ##### Birden fazla harf değişimi kullanımı, Mantıken baktığımızda Playfair gibi bir yöntemin de iki harfli frekans analizine dayanıklı olmadığını görüyoruz ki günümüzde bilgisayarlar ile kısa uzunluktaki harf değişimlerini kırmak hiç de zor değil. Uzun harf dönüşümlerinde anahtarı kaydetmek, pratikte kullanmak ve şifreleme-deşifreleme yapmak çok çok zordur. Doğruya doğru dediğimiz bir konu varsa o da şu ki, aslında çoklu harf dönüşümleriyle uğraşıp durmak bunları türetmek günün sonunda Block şifre fikrinin oluşmasına yol açmıştır. 
 
@@ -132,14 +135,16 @@ ________________________________________________________________________________
 
 ##### Blok şifre tasarımını iki alana ayırabiliriz : 
 ##### Değişim Permütasyon Ağı : Bir döngü 3 katmandan oluşur. Anahtar ekleme, değişim ve permütasyon. Anahtar ekleme kısmında anahtar düz metin ile işleme sokulur. Değişim kısmında karmaşıklık sağlanır. Permütasyon kısmında dağılım sağlanır. Bu yapıya örnek şifreler AES ve PRESENT verebiliriz. AES şu an dünyada en çok kullanılan şifreleme algoritmasıdır. PRESENT  hafif uygulamalar hafif şifreler için önerilir. Söylediklerimin özetini şekil üzerinden gösterirsem : 
-![1](https://github.com/iclalsaritas/Kriptografi/assets/97543719/3a8b712d-944c-4273-a2ad-b538a8a48a0c)
+![14](https://github.com/iclalsaritas/Kriptografi/assets/97543719/9c154909-0709-4172-8e09-4132f5f1d2da)
+
 ##### Bakın aslında işlemler gayet göz önünde. Ne yaptığım gayet ortada. Öyleyse güvende miyim? Bence güvendesin. Çünkü kötü bir senaryoda şifreli metin bloğuna ulaşılmış olsa bile, işlemi geri sardığında ne düz metin bloğuna ulaşabiliyorsun ne de anahtarı görebiliyorsun. Karşına anahtar ekleme gibi engeller çıkmaya başlıyor. Bir ihtimal şfreli metinden düz metni tahmin etseler yine de anahtarı bulmak için yeterli olmayacaktır. Kısacası tam anlamıyla olmasa da güvendesin.
 
 ##### - Feistel Şifreler ve DES
 
 ##### Feistel Ağı : Horst Feistel tarafından önerilmiştir. Bir döngü iki aşamadan oluşur. döngü fonksiyonu ve yer değiştirme işlemi.
 ##### B bitlik girdi iki parçaya bölünür. Döngü fonksiyonu önce bir parçaya uygulanır ve elde edilen çıktı diğer parça ile işleme sokulur. Daha sonra iki parça yer değiştirir. Bu sayede bir sonraki döngüde bu sefer işleme koyulmamış parça döngü fonksiyonundan etkilenir. Görselle daha iyi anlaşılabilir :
-![2](https://github.com/iclalsaritas/Kriptografi/assets/97543719/410763b1-287b-4a49-8582-1f4abd301632)
+![15](https://github.com/iclalsaritas/Kriptografi/assets/97543719/8fa7730a-7c33-480e-8aee-ad2e5d7d2f25)
+
 ##### Bakın burada şifreli metni ele geçiren kişi, sağ parçayı gizli anahtarı bildiğinden dolayı döngü fonksiyonuna katarak yukarıya doğru çıkar ve düz metne ulaşmış olur. 
 ##### SPN ve Feistel artılarını inceleyecek olursak : 
 ##### / Artılar /
@@ -154,7 +159,8 @@ ________________________________________________________________________________
 ##### Blok uzunluğu : 64 bit
 ##### Anahtar uzunluğu : 56 bit
 ##### Döngü sayısı : 16
-![3](https://github.com/iclalsaritas/Kriptografi/assets/97543719/4427dd74-1183-4e5e-a3cb-e0398d4971cb)
+![16](https://github.com/iclalsaritas/Kriptografi/assets/97543719/01bc53e0-e818-426c-a6cc-71d41208a3ad)
+
 
 ##### - AES 
 ##### Baktılar DES kolay kırılıyor, AES ortaya çıkıyor. AES (Advanced Encryption Standard)/Rijndael. 2001 yılında NIST tarafından standart yapılmıştır (AES yarışması kazananı). Diğer finalistler SERPENT,TWOFISH, RC6 ve MARS.
