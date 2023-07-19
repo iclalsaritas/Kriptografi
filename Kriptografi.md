@@ -289,7 +289,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 #### 5) Açık Anahtar Kriptografisi
-##### Esas hedefler güvenli mesaj transferi, kimlik doğrulama (Dijital imza) ve anahtar değişimidir (Bu sayede güvensiz bir haberleşme kanalı üzerinden simetrik anahtar transferi mümkün olmuştur).
+##### Esas hedefler güvenli mesaj transferi, kimlik doğrulama (Dijital imza) ve anahtar değişimidir (Bu sayede güvensiz bir haberleşme kanalı üzerinden simetrik anahtar transferi mümkün olmuştur)
 
 ##### - Diffie-Hellman Anahtar Değişimi
 
