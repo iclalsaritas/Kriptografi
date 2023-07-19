@@ -49,7 +49,7 @@ ________________________________________________________________________________
 ##### Düz metni şifreli metne, şifreli metni düz metne dönüştüren algoritma çiftine kriptosistem/şifre adını veriyoruz.
 ##### Şifreleme işlemi sırasında kullanılan gizli bilgiye de anahtar diyoruz. (İlerleyen bölümde anlatacağım.)
 ##### Harika bir çizimle işi özetleyip diğer konumuza geçiş yapıyorum.
-![1](https://github.com/iclalsaritas/Kriptografi/assets/97543719/6f6c9da0-ee21-48b8-afa6-4d8adff2c068)
+![90](https://github.com/iclalsaritas/Kriptografi/assets/97543719/55866fb5-43b8-422a-93b7-6fd61a9e58f8)
 
 ##### - Tarihî Şifreler
 ##### Teknolojinin pasif olduğu eski yıllarda elle yazma şeklinde yapılan yöntemdir. Bu yöntemde kağıt-kalem kullanıldığından kriptosistemin absürt bir karmaşıklığa sahip olmaması gerekir. Genelde harf değişim sistemi kullanılır. Bilgi sızdırmamak için şifreli metindeki noktalama işaretleri ve boşluklar genelde silinir. Enigma bölümüne geldiğimizde son cümlede bahsettiğim bilgi sızdırmama mevzusuna güzel bir örneğim olacak.
@@ -211,4 +211,4 @@ ________________________________________________________________________________
 ![2 ,](https://github.com/iclalsaritas/Kriptografi/assets/97543719/e2ca9ec4-63c3-4bab-9d33-bdf70f4fb183)
 
 ##### - Senkron Akan Şifreler
-##### Kısa bir anahtardan uzunca bir anahtar dizisi üreterek one time pad gibi çalışmayı hedeflemektedir. Gizli anahtar rastgele seçilir. Üretilen anahtar dizisi artık sözde rastgeledir çünkü kısa bir bilgiden çook daha uzun bir bilgi üreteceğimizden mütevellit böyle söyleriz. Dolayısıyla akan şifre alanındaki çalışmaların büyük kısmı ne tür dizilerin rastgelelik özellikleri gösterdiğini tespit etmek üzerinedir.
+##### Kısa bir anahtardan uzunca bir anahtar dizisi üreterek one time pad gibi çalışmayı hedeflemektedir. Gizli anahtar rastgele seçilir. Üretilen anahtar dizisi artık sözde rastgeledir çünkü kısa bir bilgiden çook daha uzun bir bilgi üreteceğimizden mütevellit böyle söyleriz. Dolayısıyla akan şifre alanındaki çalışmaların büyük kısmı ne tür dizilerin rastgelelik özellikleri gösterdiğini tespit etmek üzerinedir. Birçok teknik vardır en güzel örneklerden birisi Linear Feedback Shift Register 
