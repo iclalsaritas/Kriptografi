@@ -302,9 +302,12 @@ ________________________________________________________________________________
 ##### En temel haliyle, iki büyük rastgele asal sayı seçeriz. p ve q diyelim bunlara. n = pq hesaplanır. e sayısı seçilir 2 < e < n-1  ((p-1)(q-1) = 1) . d = e^-1 mod ((p-1)(q-1)) hesaplarız. 
 ##### Açık anahtarımız (n,e) , Gizli anahtarımız d ( p ve q sayılarını da gizli tutman lazım aklında olsun.) 
 ##### Şifreleme 0 < m < n -1 mesajı için c = m^e mod(n) hesaplanır. Deşifreleme m = c^d mod(n)
+![ööö](https://github.com/iclalsaritas/Kriptografi/assets/97543719/8039f12a-bf95-4e28-85aa-7451554761cf)
 
 ##### - El-Gamal Şifreleme Algoritması
 ##### El Gamal Şifreleme için anahtar üretimi yaparken rastgele bir x seçeriz. y = g^x hesaplarız. Burada açık anahtar y, gizli anahtar x dir. Şifreleme işleminde şifreleme için rastgele r seçeriz (u=g^r, v=my^r) ve yollarız. Deşifreleme için vu^-x = m işlemiyle mesaj m yi elde ederiz.
+![hhh](https://github.com/iclalsaritas/Kriptografi/assets/97543719/fd1fee99-293c-4ed9-9a97-2bb413eafe3d)
+
 
 ##### - Dijital İmza Standardı
 #####  Parametre üretimi yapmak söz konusuysa özen göstermemiz gereken mevzular vardır. Bunlar :
