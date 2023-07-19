@@ -296,7 +296,7 @@ ________________________________________________________________________________
 ##### Ayrık Logaritma Problemi : Önceden belirlenen g ve p sayıları için a bilindiğinde g^a = b (mod p) hesaplamak kolaydır. b verildiğinde g^a = b mod eşitliğini sağlayan a sayısını bulmak zordur. Örnek :
 ##### 3^x = 7376884875361470534 (mod 18446744073709551615) cevap 127002 . X yerine 1'den başlayıp yazmaya başlasak 127002 denemeden sonra sonucu bulacağımız anlamına gelir saldırı yaparken. Lakin pratikte sayılar daha büyük olduğundan kaba kuvvet saldırısı biraz daha uzun sürecektir.
 ##### A kişisi rastgele bir a sayısı seçip B'ye g^a (mod p) sayısını yollasın. B kişisi rastgele bir  b sayısı sçeip A'ya g^b (mod p) sayısını yollasın. A kişisi (g^a)^b = g^ab (mod p) sayısını hesaplasın. B kişisi (g^a)^b = g^ab (mod p) sayısını hesaplasın.
-##### buraya resim gelecek
+##### ![zzz](https://github.com/iclalsaritas/Kriptografi/assets/97543719/206d0bd3-cd3a-4789-9473-8be0d0b3689b)
 
 #####  - RSA Şifreleme Algoritması
 ##### En temel haliyle, iki büyük rastgele asal sayı seçeriz. p ve q diyelim bunlara. n = pq hesaplanır. e sayısı seçilir 2 < e < n-1  ((p-1)(q-1) = 1) . d = e^-1 mod ((p-1)(q-1)) hesaplarız. 
