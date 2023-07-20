@@ -209,7 +209,7 @@ ________________________________________________________________________________
 ##### Blok Şifreler : Düz metin bloklarına sabit bir dönüşüm uygular.
 ##### Akan Şifreler : Düz metin bit/bayt bloklarına zaman göre değişen bir dönüşüm uygular.
 ##### Bu kısa hatırlatmadan sonra Akan şifrelere devam edelim.
-##### Akan şifrelerin doğmasının sebebi one time pad den kaynaklanmaktadır. Diğer ismiyle Vernam şifresidir. Tarihsel serüven kısmında ufak bir değinmiştim. One time pad rastgele bitlerden oluşan uzun bir anahtar dizisi kullanır. Anahtar dizisi uzunluğu en az düz metin kadar olmalıdır ve sadece 1 kez kullanılmalıdır. Şifreleme, anahtar dizisinin düz metin bitleriyle XOR'lanmasıdır. Shannon one time pad in kırılamaz olduğunu ispatlamıştır. Çok fazla anahtar dizisine ihtiyaç duyulacağından pratik değildir. Bir örnek :
+##### Akan şifrelerin doğmasının sebebi one time pad den kaynaklanmaktadır. Diğer ismiyle Vernam şifresidir. One time pad rastgele bitlerden oluşan uzun bir anahtar dizisi kullanır. Anahtar dizisi uzunluğu en az düz metin kadar olmalıdır ve sadece 1 kez kullanılmalıdır. Şifreleme, anahtar dizisinin düz metin bitleriyle XOR'lanmasıdır. Shannon one time pad in kırılamaz olduğunu ispatlamıştır. Çok fazla anahtar dizisine ihtiyaç duyulacağından pratik değildir. Bir örnek :
 ![k](https://github.com/iclalsaritas/Kriptografi/assets/97543719/fcaf25af-530f-41ff-a7d0-e63921c47570)
 
 
