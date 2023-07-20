@@ -36,7 +36,7 @@ ________________________________________________________________________________
 ##### Kriptografi : Güvenli kriptosistem/şifre tasarımıyla ilgilenir.
 ##### Kriptanaliz : Kriptosistem/şifre analiziyle yani kırma işlemleriyle ilgilenir.
 ##### NOT ! İki terimi birbirinden ayrı düşünmek tam anlamıyla hata olacaktır. Çünkü sağlam bir tasarım için onu nasıl kırabileceğini de bilmek gerekir. 
-##### [ Peki ben hala Kriptografi ve Kriptoloji terimlerini karıştırıyorum İclalciğim diyorsan, endişelenme. Günümüzde iki kavram da aynı anlamda kullanılıyor. ]
+##### [ Peki ben hala Kriptografi ve Kriptoloji terimlerini karıştırıyorum İclalciğim diyorsan, endişelenme. Günümüzde iki kavram da aynı anlamda kullanılıyor. Ama bunu dedim diye Kriptografi bilgi güvenliği için gerekli metodları tanımlarken kriptoloji kriptografiyle kriptanalizin birleşimidir gerçeğini aklından çıkarma. ]
 
 ##### / Kriptografi Sayesinde Çözülen Güvenlik Problemleri /
 ##### * Şifreleme(Encryption) yöntemiyle verilerin(Depolanan veriler), iletilerin ve görüşmelerin güvenliğini sağlamak. 
