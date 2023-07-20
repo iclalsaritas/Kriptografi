@@ -158,7 +158,8 @@ ________________________________________________________________________________
 ##### SPN : Deşifreleme işlemi değişim ve permütasyon tabakalarının tersini de gerektirmektedir. 
 
 ##### - DES (Data Encryption Standard) 
-##### IBM tarafından 1970 zamanlarında tasarlanmıştır. Önceki tasarımlar Feistel tarafından yapılmıştır. 1976 yılında NSA değişim kutularını (S-box) değiştirerek şifreyi değiştirmiştir. Bu esasında olumlu bir harekettir ancak anahtar uzunluğunun kısalmasına sebep olduğu için güvenliğini azaltmıştır. 1990 zamanlarından sonra anahtar uzunluğunun kısa olması sebebiyle kullanılamaz hale gelmiştir.
+##### IBM tarafından 1970 zamanlarında tasarlanmıştır. Önceki tasarımlar Feistel tarafından yapılmıştır. 1976 yılında NSA değişim kutularını (S-box) değiştirerek şifreyi değiştirmiştir. Bu esasında olumlu bir harekettir lakin anahtar uzunluğunun kısalmasına sebep olduğu için güvenliğini azaltmıştır. 1990 zamanlarından sonra anahtar uzunluğunun kısa olması sebebiyle kullanılamaz hale gelmiştir. Birden fazla anahtar kullanan 3DES güvenlidir lakin hantaldır.
+
 ##### Blok uzunluğu : 64 bit
 ##### Anahtar uzunluğu : 56 bit
 ##### Döngü sayısı : 16
@@ -204,7 +205,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 #### 3) Akan Şifreler
-##### Simetrik anahtarlı şifreleme algoritmaları genellikle iki grupta incelenir demiştik. Neydi o ikisi? Blok şifreler ve Akan şifrelerdi.
+##### Simetrik anahtarlı şifreleme algoritmaları genellikle 3 grupta incelenir demiştik. Detaylı anlatacağım 2 şifreden bahsedeceğim burada. Blok şifreler ve Akan şifreler.
 ##### Blok Şifreler : Düz metin bloklarına sabit bir dönüşüm uygular.
 ##### Akan Şifreler : Düz metin bit/bayt bloklarına zaman göre değişen bir dönüşüm uygular.
 ##### Bu kısa hatırlatmadan sonra Akan şifrelere devam edelim.
