@@ -234,7 +234,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 #### 4) Özet (Hash) Fonksiyonlar
-##### Farklı uzunluklarda girdi alabilip hep aynı n bit uzunlukta çıktı veren fonksiyonlara özet fonksiyon değil. 
+##### Farklı uzunluklarda girdi alabilip hep aynı n bit uzunlukta çıktı veren fonksiyonlara özet fonksiyon denir. 
 ##### Kriptografik özet fonksiyonların şu özellikleri sağlamasını bekleriz :
 ##### Ön görüntü dayanıklılığı, ikinci ön görüntü dayanıklılığı ve çakışma dayanıklılığı. Ayrıca çıktıların rastgelelik özellikleri göstermesini bekliyoruz.
 
